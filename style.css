@@ -1,0 +1,28 @@
+body {
+    background-color: #AAAAAA;
+}
+
+.main-page {
+    /* display: flex; */
+    text-align: center;
+    /* justify-content: space-around; */
+}
+
+.btn-clear {
+    width: 90px;
+    height: 50px;
+    background-color: #FFCF54;
+    margin-bottom: 20px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+#footer {
+    height: 100px;
+    display: inline-block;
+    width: 100vw;
+    text-align: center;
+    margin-top: 50px;
+}

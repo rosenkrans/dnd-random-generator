@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DnD Random Generator</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class='main-page'>
+
+        <div class='header'>
+            <h1>D&D Character Generator</h1>
+
+            <button class='btn-clear' value='CLEAR' onClick='window.location.reload();'>CLEAR</button>
+        </div>
+
+        <div class='category'> 
+            <button onclick='newEyeColor()'>Eye Color</button>
+            
+            <div id='eyeColorDisplay'>
+                <!-- Eye Color will display here -->
+            </div>    
+        </div>
+
+            
+        <div class='category'>         
+            <button onclick='newHairStyle()'>Hair Style</button>
+            
+            <div id='hairStyleDisplay'>
+                <!-- Hair Style will display here -->
+            </div>    
+        </div>
+
+        <div class='category'>         
+            <button onclick='newHairColor()'>Hair Color</button>
+            
+            <div id='hairColorDisplay'>
+                <!-- Hair Color will display here -->                
+            </div>    
+        </div>
+
+        <div class='category'> 
+            <button onclick='newPlaceOfBirth()'>Place of Birth</button>
+        
+            <div id='placeOfBirthDisplay'>
+                <!-- Place of Birth will display here -->
+            </div>    
+        </div>
+
+        <div class='category'>
+            <button onclick='newCaretaker()'>Caretaker</button>
+        
+            <div id='caretakerDisplay'>
+                <!-- Caretaker will display here -->
+            </div>    
+        </div>
+
+        <div class='category'>
+            <button onclick='newChildhood()'>Childhood</button>
+        
+            <div id='childhoodDisplay'>
+                <!-- Childhood will display here -->
+            </div>
+        </div>
+
+        <div class='category'>
+                <button onclick='newTattoo()'>Tattoo</button>
+            
+                <div id='tattooDisplay'>
+                    <!-- Tattoo will display here -->
+                </div>
+            </div>
+
+
+
+
+
+
+    <script src='scripts.js'></script>
+
+
+
+
+
+
+
+    </div>
+
+    <div id="footer">
+            <footer>Developer: Mark Rosenkrans</footer>
+        </div>
+        
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+
+</body>
+</html>
