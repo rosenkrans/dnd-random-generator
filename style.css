@@ -39,12 +39,19 @@ body {
     /* background-color: white; */
     background-image: url(images/grid6.jpg);
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .all-features-div {
     column-count: 3;
 }
 
+.feature-display {
+    font-weight: bold;
+    /* width: 500px; */
+    /* text-align: center;
+    background-image: url(images/grid4.jpg); */
+}
 
 .category {
     margin-bottom: 20px;
