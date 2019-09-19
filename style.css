@@ -1,13 +1,10 @@
 body {
-    /* background-color: #AAAAAA; */
     background-image: url('./images/dnd\ scroll\ w\ grid.jpg');
     background-size: cover;
 }
 
 .main-page {
-    /* display: flex; */
     text-align: center;
-    /* justify-content: space-around; */
 }
 
 .header {
@@ -17,7 +14,6 @@ body {
 .btn-clear {
     width: 90px;
     height: 20px;
-    /* background-color: #CCB093; */
     background-image: url(images/grid4.jpg);
     margin-bottom: 30px;
 }
@@ -48,13 +44,13 @@ body {
 
 .feature-display {
     font-weight: bold;
-    /* width: 500px; */
-    /* text-align: center;
-    background-image: url(images/grid4.jpg); */
+    text-align: center;
+    /* background-image: url(images/grid4.jpg); */
+    /* background-color: #FFFAD1 */
 }
 
 .category {
-    margin-bottom: 20px;
+    margin-bottom: 20px;   
 }
 
 #footer {
