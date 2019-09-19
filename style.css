@@ -1,34 +1,43 @@
 body {
     /* background-color: #AAAAAA; */
-    background-image: url('');
+    background-image: url('./images/dnd\ scroll\ w\ grid.jpg');
+    background-size: cover;
 }
 
 .main-page {
     /* display: flex; */
     text-align: center;
-    /* justify-content: space-around; */ 
+    /* justify-content: space-around; */
+}
+
+.header {
+    color: #FFFAD1;
 }
 
 .btn-clear {
     width: 90px;
     height: 20px;
-    background-color: #FF78A6;
+    /* background-color: #CCB093; */
+    background-image: url(images/grid4.jpg);
     margin-bottom: 30px;
 }
 
 .btn-full-character {
     width: 220px;
     height: 50px;
-    background-color: #D48AFF;
+    /* background-color: #CC8D48; */
+    background-image: url(images/grid5.jpg);
+    color: #FFFAD1;
     margin-bottom: 30px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .btn-feature {
     width: 130px;
     height: 30px;
-    background-color: white;
+    /* background-color: white; */
+    background-image: url(images/grid6.jpg);
     margin-bottom: 10px;
 }
 
