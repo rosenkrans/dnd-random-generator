@@ -1,3 +1,30 @@
+function newFullCharacter(){
+    newRace();
+    newSkinColor();
+    newEyeColor();
+    newHairColor();
+    newHairStyle();
+    newPlaceOfBirth();
+    newCaretaker();
+    newChildhood();
+    newTattoo();
+    newCharacterFlaw();
+    newPhobia();
+    newAppearanceTrait();
+    newOccupation();
+    newGoalDesireSecret();
+    newRandomEncounter();
+    newWineLiquor();
+    newTavernInnFood();
+    newMiscTreasureItem();
+    newWound();
+    newMisfortune();
+    newDeath();
+    newSocialStatus();
+    newHobby();
+    newScent();
+}
+
 var races = ['Human', 'Dwarf', 'High Elf', 'Wood Elf', 'Half Elf', 'Drow', 'Halfling', 'Gnome', 'Dragonkin', 
     'Half-orc', 'Genasi', 'Tiefling'];
 
