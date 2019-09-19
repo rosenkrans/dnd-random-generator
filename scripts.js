@@ -171,7 +171,188 @@ function newPhobia(){
     document.getElementById('phobiaDisplay').innerHTML = phobias[phobia];
 }
 
+var appearance_traits = ['Facial scar', 'Faded tattoo', 'Missing a finger', 'One arm made of iron', 
+    'Wild bird on shoulder', 'Accosted by cats', 'Missing an ear', 'Graceful bearing', 
+    'Chemical burns on hand', 'Smells like horses', 'Squirrel in pocket', 'Harp case on back', 
+    'Feathered cloak', 'Tattered rags', 'Tangled hair'];
 
+function newAppearanceTrait(){
+    var appearance_trait = Math.floor(Math.random() * appearance_traits.length);
+    document.getElementById('appearanceTraitDisplay').innerHTML = appearance_traits[appearance_trait];
+}
 
+var occupations = ['Gold miner', 'Blacksmith', 'Innkeeper', 'Traveling trader', 'Estranged noble', 
+    'Traveling bard', 'Harper spy', 'Cleric of Light', 'Cleric of Dark', 'Healer', 'Tanner', 'Guardsman', 
+    'Soldier', 'Apothecary', 'Wizard', 'Baker', 'Stonemason', 'Farmer', 'Cobbler', 'Hunter', 'Servant, Scout', 
+    'Haughty noble', 'Hermit', 'Ranger', 'Entertainer', 'Slave', 'Guild artisan', 'Monk', 'Scholar', 'Soldier', 
+    'Mercenary', 'Mage', 'Apprentice Mage', 'Hedgewitch', 'Hedgewizard', 'Archmagus', 'Thief', 'Forger', 'Jeweler', 
+    'Minor noble', 'Major noble', 'Royalty', 'Service to Dark', 'Service to Light', 'Brewer', 'Bookbinder', 
+    'Luthier', 'Cook', 'Barbarian tribe leader', 'Executioner', 'Bounty hunter', 'Dragon Scholar', 
+    'Dragon Cultist', 'Gryphon trainer', 'Genasi ambassador', 'Horse trainer']
 
+function newOccupation(){
+    var occupation = Math.floor(Math.random() * occupations.length);
+    document.getElementById('occupationDisplay').innerHTML = occupations[occupation];
+}
 
+var goal_desire_secrets = ['Missing relative', 'Unrequited romance', 'Missing lover', 
+    'Secret shapeshifter', 'Trying to find lost heirloom', 'Escaping an enemy', 
+    'Running from the law', 'Recovering form illness', 'Wants to be famous', 
+    'Needs help with monster', 'Completely drunk', 'Selling something', 
+    'Love potion targeted on PC', 'Carries a cryptic treasure map they won in a tavern bet', 
+    'Who is a recovering gambling addiction and lost minor appendages to it', 
+    'In way too deep with the wrong people', 'Failed to protect the royal family', 
+    'Left homeland in disgrace', 'Posing as someone else', 'Has been on the run for more than 3 years',  
+    'Can\'t silence the voices', 'Searching for the knowledge of true immortality', 
+    'Expelled from the royal guards', 'Makes all minor decisions by flipping a coin', 
+    'Framed for the murder of a well loved innkeeper', 'Responsible for their sister\'s death', 
+    'Knows that they are the incarnation of a legendary warrior', 'Isn\'t technically alive anymore', 
+    'On the run after having an affair with a Noble\'s daughter', 
+    'Haunted by the ghosts of their forefathers', 'Knows seven dangerous secrets', 
+    'Trapped in a Faustian bargain', 'Is a recovering cannibal', 'Was born in a different body', 
+    'Started a rebellion in the northern mountains'];
+
+function newGoalDesireSecret(){
+    var goal_desire_secret = Math.floor(Math.random() * goal_desire_secrets.length);
+    document.getElementById('goalDesireSecretDisplay').innerHTML = goal_desire_secrets[goal_desire_secret];
+}
+
+var random_encounters = ['Seasonal festival', 'Funeral', 'Evil creatures breeding', 
+    'Traveling minstrels', 'Traveling tinkers', 'Escaped criminal', 'Wizard spell gone awry', 
+    'Find an egg from a dragon', 'Find an egg from a gryphon', 'Earthquake', 'Severe winter storm', 
+    'Severe thunderstorm', 'Lame horse', 'Forest fire', 'Bandits', 'Black eyed children', 
+    'Lost child', 'Cult ambush', 'Plague stricken farm', 'Plague stricken village', 'Cursed item', 
+    'Vengeful ex lover', 'Lost hatchling', 'Strayed monster youngling', 'Swarms of vermin', 
+    'Farmhouse on fire', 'Waystation on fire', 'Orc raid on farm', 'Tornado', 'Enormous sinkhole', 
+    'Chasm with broken bridge'];
+
+function newRandomEncounter(){
+    var random_encounter = Math.floor(Math.random() * random_encounters.length);
+    document.getElementById('randomEncounterDisplay').innerHTML = random_encounters[random_encounter];
+}
+
+var wine_liquors = ['Grog', 'Goblin spit ale', 'Orc Kragg', 'Turnip wine', 'Miller\'s moonshine', 
+    'Dwarven ale', 'Moon Mountain ale', 'Lotus leaf wine', 'Dragonhead stout', 'Elven Mead', 'Berry brandy',
+    'Fireweed whiskey', 'Scorpionweed Reserve', 'Bacon beer', 'Crowberry cider', 'Brandy laced goatsmilk', 
+    'Swamplight spirits', 'Wild Orchid wine', 'Frenzywater', 'Halfling brown ale'];
+
+function newWineLiquor(){
+    var wine_liquor = Math.floor(Math.random() * wine_liquors.length);
+    document.getElementById('wineLiquorDisplay').innerHTML = wine_liquors[wine_liquor];
+}
+
+var tavern_inn_foods = ['Acorn soup', 'Frogs on skewers', 'Lizard gruel with grilled snake', 
+    'Leg of mutton with goose eggs', 'Beef stew and sourdough', 'Rabbit and baked pumpkin', 
+    'Bog-beetle dumplings', 'Wren pie and cattail soup', 'Thistle salad with roasted grubs', 
+    'Grilled wild boar chips', 'Roast chicken and potatoes', 'Roasted cod and mashed taters', 
+    'Beef steak and kidney pie', 'Baked pheasant w/ juniper', 'Smoked salmon & wild berries', 
+    'Stuffed trout w/ cabbage', 'Braised beef & onion soup', 'Roast stag and plum pudding', 
+    'Fried ostrich and egg omelet', 'Lettuce', 'Liver', 'Lung pie'];
+
+function newTavernInnFood(){
+    var tavern_inn_food = Math.floor(Math.random() * tavern_inn_foods.length);
+    document.getElementById('tavernInnFoodDisplay').innerHTML = tavern_inn_foods[tavern_inn_food];
+}
+
+var misc_treasure_items = ['Sack of gold', 'Chest of silver', 'Leather bag of gems', 
+    'Jeweled tiara', 'Ancient weapon', 'Old spellbook', 'Treasure map', 'Jeweled dagger', 
+    'Jade animal', 'Magical music box', 'Jeweled ring', 'Otherworldly statue', 'Carved twisted horn', 
+    'Onyx dragonskull', 'Unknown egg', 'Inscribed tankard', 'Ancient scrolls', 'Speaking skull', 
+    'Mysterious key', 'Everfilling tankard'];
+
+function newMiscTreasureItem(){
+    var misc_treasure_item= Math.floor(Math.random() * misc_treasure_items.length);
+    document.getElementById('miscTreasureItemDisplay').innerHTML = misc_treasure_items[misc_treasure_item];
+}
+
+var wounds = ['Deep facial cut', 'Ear cut off', 'Blinded eye', 'Deep cut across chest', 
+    'Broken rib', 'Slice across back', 'Deep gash in arm', 'Shattered wrist', 'Broken ankle', 
+    'Broken leg', 'Shoulder dislocated'];
+
+function newWound(){
+    var wound = Math.floor(Math.random() * wounds.length);
+    document.getElementById('woundDisplay').innerHTML = wounds[wound];
+}
+
+var misfortunes = ['Tormenting prophetic visions', 'Hunted by Reaper', 'Generational curse', 
+    'Haunted by Ghost', 'Possessed by demon', 'Taken by slavers', 'Kidnapped by barbarians', 
+    'Conscripted into army', 'Polymorphed', 'Lost everything and now a beggar', 
+    'Lost everything and now a servant', 'Madness', 'Imprisoned for a crime they committed', 
+    'Imprisoned for a crime they didn\'t commit', 'Imprisoned for offending a royal', 
+    'Fallen into Cult\'s sway', 'Missing a limb', 'Blinded', 'Turned into a vampire', 
+    'Turned into a werewolf', 'On the run from crime lord', 'Kidnapped by bandits', 
+    'Unwilling necromancer', 'Uncontrolled pyromancer'];
+
+function newMisfortune(){
+    var misfortune = Math.floor(Math.random() * misfortunes.length);
+    document.getElementById('misfortuneDisplay').innerHTML = misfortunes[misfortune];
+}
+
+var deaths = ['Warfare as a participant',  'Warfare as collateral damage', 
+    'Magical accident of their own', 'Magical accident of another', 'Street accident', 
+    'Earthquake', 'Tornado', 'Frozen in blizzard', 'Starved in famine', 'Caught a disease', 
+    'Died in plague', 'Barbarian raid', 'Bandit raid', 'Monster attack', 
+    'Executed for another\'s crime', 'Executed for offending royalty', 
+    'Murdered by family member', 'Murdered and culprit unknown', 'Death ordered by crime lord', 
+    'Murdered by jealous lover', 'Sacrificed by a cult', 'Kidnapped by a dragon', 
+    'Enslaved to an Archmagus because of magical talent', 'Conscripted by pirates'];
+
+function newDeath(){
+    var death = Math.floor(Math.random() * deaths.length);
+    document.getElementById('deathDisplay').innerHTML = deaths[death];
+}
+
+var social_statuses = ['Slave', 'Petty criminal', 'Major criminal', 'Wealthy landowner', 
+    'Craftsman', 'Scholar', 'Soldier or Mercenary', 'Crime lord', 'Minor mage', 'Demon hunter', 
+    'Minor noble', 'Major Noble', 'Archmage', 'High Priest or Priestess', 'Acolyte or Monk', 
+    'Connected to the Dark', 'Connected to the Light', 'Royalty'];
+
+function newSocialStatus(){
+    var social_status = Math.floor(Math.random() * social_statuses.length);
+    document.getElementById('socialStatusDisplay').innerHTML = social_statuses[social_status];
+}
+
+var hobbies = ['Music', 'Woodcarving', 'Sketching', 'Painting', 'Gambling', 'Brewing liquor', 
+    'Training animals', 'Sewing or embroidery', 'Minor necromancy', 'Minor earthmagic', 
+    'Ghost hunting', 'Acrobatics', 'Prestidigitation', 'Carving gemstones', 'Alchemy', 
+    'Collecting fables or legends', 'Baking', 'Cookery', 'Travel to and study alien races', 
+    'Explore the Underdark', 'Amateur sleuth', 'Making candy', 'Ghost writing love letters'];
+
+function newHobby(){
+    var hobby = Math.floor(Math.random() * hobbies.length);
+    document.getElementById('hobbyDisplay').innerHTML = hobbies[hobby];
+}
+
+var scents = ['Absinthe, Allspice', 'Amber', 'Ambergris', 'Apple', 'Apricot', 'Ashes', 
+    'Autumn leaves', 'Autumn spices', 'Baby Powder', 'Baking cookies', 'Balsam Wood', 
+    'Bamboo', 'Basil', 'Bay Leaf', 'Bay Rum', 'Berries', 'Blackberry', 'Black Currant', 
+    'Black Pepper', 'Black Raspberry', 'Black vetiver', 'Blue cypress', 'Boiled cabbage', 
+    'Bourbon vanilla', 'Burnt Sugar', 'Butter', 'Buttercream', 'Buttery suede', 'Cactus', 
+    'Cantaloupe', 'Caramel', 'Caramelized sugar', 'Cardamom', 'Carnation', 'Casa Blanca Lily', 
+    'Cashmere wood (yes wood)', 'Cedarwood', 'Chamomile', 'Champagne', 'Cheap perfume', 
+    'Cherry Blossom', 'Cherry Vanilla', 'Cherrywood', 'Chocolate', 'Cigars', 'Cilantro', 'Cinnamon', 
+    'Clove', 'Clover', 'Coconut', 'Coconut milk', 'Coffee', 'Coriander', 'Cornmeal', 'Cranberry', 
+    'Cucumber', 'Cumin', 'Cypress', 'Daffodils', 'Dark chocolate', 'Driftwood', 'Dry wood', 'Earth', 
+    'Earthy heart of patchouli', 'Ebony wood', 'Eucalyptus', 'Fern', 'Fig', 'Forest Rain', 'Vanilla', 
+    'Fresh bread', 'Fresh Cut Grass', 'Fresh Laundry', 'Fresh rainfall', 'Gardenia', 'Garlic', 'Geranium', 
+    'Ginger', 'Gingerbread', 'Grapefruit', 'Grass', 'Grassy vetiver', 'Green Tea', 'Hazelnuts', 
+    'Heart of juniper', 'Hibiscus', 'Honey', 'Honeydew', 'Honeysuckle', 'Incense', 'Ink', 'Iris', 'Iron', 
+    'Ivy', 'Jade', 'Jasmine', 'Juniper', 'Juniper berries', 'Kiwi', 'Lavender', 'Leather', 'Leather polish', 
+    'Lemon', 'Lemon grass', 'Lilac', 'Lilly of the valley', 'Lily', 'Lime', 'Linen', 'Magnolia', 'Mandarin', 
+    'Mango', 'Maple sugar', 'Medicine', 'Melon', 'Mocha', 'Molasses', 'Moonlight', 'Moss', 'Musk', 
+    'Musty books', 'Nectar', 'Nectarine', 'Oak', 'Oakmoss', 'Oats', 'Old parchment', 'Opium', 'Orange', 
+    'Orange Blossom', 'Orchid', 'Orchid smoke', 'Oregano', 'Oriental musk', 'Papyrus extract', 
+    'Papyrus juice', 'Passion Flower', 'Passion Fruit', 'Patchouli', 'Peach', 'Pear', 'Peony', 'Peppermint', 
+    'Pineapple', 'Pine Needles', 'Pink pepper', 'Plum', 'Pomegranate', 'Praline', 'Prune', 'Pumpkin', 
+    'Rain', 'Raisins', 'Raspberry', 'Red wine', 'River mud', 'River water', 'Rose', 'Rosemary', 'Rosewood', 
+    'Rusted metal', 'Sage', 'Sandalwood', 'Scotch', 'Sea amber', 'Seabreeze', 'Sea Mist', 'Sea salt', 'Seawater', 
+    'Seaweed', 'Snowberry', 'Snow drifts', 'Stale beer', 'Stale sweat', 'Straw', 'Strawberry', 'Sugar', 
+    'Sugared almonds/pecans', 'Sunlight', 'Sweet Pea', 'Sweetshrub', 'Sweet smoke', 'Tangerine', 'Tarragon', 
+    'Tea Leaves', 'Tea Rose', 'Thyme', 'Spices', 'Tobacco', 'Tonka bean', 'Tonkin musk', 'Vanilla', 'Vetiver', 
+    'Violet', 'Violet leaf', 'Virginia cedar', 'Water Lily', 'Watermelon', 'White bergamot', 'White Ginger', 
+    'White Peach', 'White pepper', 'White Tea', 'White wine', 'Woodsmoke', 'Ylang ylang'];
+
+function newScent(){
+    var scent = Math.floor(Math.random() * scents.length);
+    document.getElementById('scentDisplay').innerHTML = scents[scent];
+}
