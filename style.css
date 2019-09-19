@@ -1,5 +1,6 @@
 body {
-    background-color: #AAAAAA;
+    /* background-color: #AAAAAA; */
+    background-image: url('');
 }
 
 .main-page {
@@ -11,12 +12,12 @@ body {
 .btn-clear {
     width: 90px;
     height: 20px;
-    background-color: #FFCF54;
+    background-color: #FF78A6;
     margin-bottom: 30px;
 }
 
 .btn-full-character {
-    width: 120px;
+    width: 220px;
     height: 50px;
     background-color: #D48AFF;
     margin-bottom: 30px;
