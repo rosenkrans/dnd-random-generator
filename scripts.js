@@ -167,7 +167,7 @@ var phobias = ['Darkness', 'Heights', 'Vomiting secondary to airsickness', 'Cats
     'Death portents', 'Curses', 'Tunnels', 'Goblins', 'Sea travel'];
 
 function newPhobia(){
-    var phobia = Math.floor(Math.random() * phobia.length);
+    var phobia = Math.floor(Math.random() * phobias.length);
     document.getElementById('phobiaDisplay').innerHTML = phobias[phobia];
 }
 
