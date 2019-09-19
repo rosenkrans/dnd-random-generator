@@ -1,3 +1,21 @@
+var races = ['Human', 'Dwarf', 'High Elf', 'Wood Elf', 'Half Elf', 'Drow', 'Halfling', 'Gnome', 'Dragonkin', 
+    'Half-orc', 'Genasi', 'Tiefling'];
+
+function newRace(){
+    var race = Math.floor(Math.random() * races.length);
+    document.getElementById('raceDisplay').innerHTML = races[race];
+}
+
+var skin_colors = ['Ivory', 'Pale', 'Bone white', 'Weathered', 'Tanned', 'Rosy', 'Olive', 
+    'Caramel', 'Deep brown', 'Gray', 'Silvery', 'Sunwarmed copper', 'Mahogany', 'Porcelain', 'Espresso', 
+    'Chestnut', 'Deep Bronze', 'Golden Bronze', 'Golden Beige', 'Medium Beige', 'Apricot', 'Neutral', 
+    'Fair with pink undertone', 'Fair with yellow undertone', 'Amber', 'Chocolate', 'Russet'];
+
+function newSkinColor(){
+    var skin_color = Math.floor(Math.random() * skin_colors.length);
+    document.getElementById('skinColorDisplay').innerHTML = skin_colors[skin_color];
+}
+
 var eye_colors = ['Clear blue', 'Bright blue', 'Pale green', 'Cold blue', 'Shining blue', 
     'Milky blue', 'Sky blue', 'Fierce blue', 'Piercing blue', 'Cobalt', 'Cerulean', 'Ice blue', 'Deep blue',
     'Ocean blue', 'Sapphire', 'Topaz blue', 'Beryl', 'Deep blue with silver flecks', 
@@ -63,9 +81,9 @@ function newPlaceOfBirth(){
 }
 
 var caretakers = ['Original parents', 'Aunt', 'Uncle', 'Distant relative from far off land', 
-'One parent alive & other misfortune', 'One parent alive & other dead', 'Grandparent', 
-'Grandparents', 'Adopted by alien race', 'Adopted by same race', 'Orphanage', 'Monastery', 'Master', 
-'Owner', 'On your own']
+    'One parent alive & other misfortune', 'One parent alive & other dead', 'Grandparent', 
+    'Grandparents', 'Adopted by alien race', 'Adopted by same race', 'Orphanage', 'Monastery', 'Master', 
+    'Owner', 'On your own']
 
 function newCaretaker(){ 
     var caretaker = Math.floor(Math.random() * caretakers.length);
@@ -73,12 +91,12 @@ function newCaretaker(){
 }
 
 var childhoods = ['Caretaker in prison', 'Caretaker a street rat', 'Caretaker a hermit',  
-'Sheltered and overprotected', 'Fierce sibling rivalry', 'Abusive parent', 
-'Abusive sibling', 'Abusive Master', 'Kind Master', 'Military structure', 
-'Businesslike Owner', 'Apprenticed to Entertainer', 'Apprenticed to Crafstman', 
-'Apprenticed to magic user', 'Apprenticed to Scholar', 'Intense schooling of the right kind', 
-'Intense schooling of the wrong kind', 'Caretaker for diseased relative', 
-'Caretaker for crazy relative', 'Groomed for marriage', 'Groomed for ruling']
+    'Sheltered and overprotected', 'Fierce sibling rivalry', 'Abusive parent', 
+    'Abusive sibling', 'Abusive Master', 'Kind Master', 'Military structure', 
+    'Businesslike Owner', 'Apprenticed to Entertainer', 'Apprenticed to Crafstman', 
+    'Apprenticed to magic user', 'Apprenticed to Scholar', 'Intense schooling of the right kind', 
+    'Intense schooling of the wrong kind', 'Caretaker for diseased relative', 
+    'Caretaker for crazy relative', 'Groomed for marriage', 'Groomed for ruling']
 
 function newChildhood() {
     var childhood = Math.floor(Math.random() * childhoods.length);
@@ -86,42 +104,71 @@ function newChildhood() {
 }
 
 var tattoos = ['Fading snake around arm', 
-'Colorful serpent around leg', 
-'Delicate serpent around wrist', 
-'Coiled serpent biting its own tail on chest', 
-'Pair of twining serpents across back', 
-'Fiery serpent along forearm', 
-'Rampant lion across left side of chest', 
-'Rampant gryphon across back', 
-'Sly dragon coiled around shoulder and upper arm', 
-'Bright smiling sun on shoulder', 
-'Fierce falcon on calf', 
-'Mischievous squirrel on calf', 
-'Shrouded figure with a scythe on shoulderblade', 
-'Rusted hourglass on ankle', 
-'Grinning skull resting on ruby roses across right side of chest', 
-'Sorrowful fox beneath a golden harvest moon', 
-'Brightly colored lizard scampering up shoulder', 
-'Holly bough with bright red berries on wrist', 
-'Eagle clutching three arrows on one shoulderblade', 
-'Raven with outstretched wings across back', 
-'Fierce-eyed falcon with outstretched wings across chest', 
-'Sultry mermaid amidst a school of dolphins across thigh', 
-'Red-furred fox grinning slyly on shoulder', 
-'Elegant sunflower twined with an emerald ribbon across shoulderblade', 
-'Golden-eyed owl gazing solemnly from shoulder', 
-'Proud stag with antlers stretched across both shoulders and back', 
-'Delicate strand of ivory and blossoms around wrist', 
-'Sinuous strand of thorned branches around upper arm', 
-'Tawny furred lioness reclining across shoulderblade', 
-'Ship with tattered black sails on calf', 
-'Ornate Oak tree with stylized branches on chest', 
-'Intricate Tiger Lily with a single honeybee on one petal across calf', 
-'Band of flames writhing around upper arm'];
+    'Colorful serpent around leg', 
+    'Delicate serpent around wrist', 
+    'Coiled serpent biting its own tail on chest', 
+    'Pair of twining serpents across back', 
+    'Fiery serpent along forearm', 
+    'Rampant lion across left side of chest', 
+    'Rampant gryphon across back', 
+    'Sly dragon coiled around shoulder and upper arm', 
+    'Bright smiling sun on shoulder', 
+    'Fierce falcon on calf', 
+    'Mischievous squirrel on calf', 
+    'Shrouded figure with a scythe on shoulderblade', 
+    'Rusted hourglass on ankle', 
+    'Grinning skull resting on ruby roses across right side of chest', 
+    'Sorrowful fox beneath a golden harvest moon', 
+    'Brightly colored lizard scampering up shoulder', 
+    'Holly bough with bright red berries on wrist', 
+    'Eagle clutching three arrows on one shoulderblade', 
+    'Raven with outstretched wings across back', 
+    'Fierce-eyed falcon with outstretched wings across chest', 
+    'Sultry mermaid amidst a school of dolphins across thigh', 
+    'Red-furred fox grinning slyly on shoulder', 
+    'Elegant sunflower twined with an emerald ribbon across shoulderblade', 
+    'Golden-eyed owl gazing solemnly from shoulder', 
+    'Proud stag with antlers stretched across both shoulders and back', 
+    'Delicate strand of ivory and blossoms around wrist', 
+    'Sinuous strand of thorned branches around upper arm', 
+    'Tawny furred lioness reclining across shoulderblade', 
+    'Ship with tattered black sails on calf', 
+    'Ornate Oak tree with stylized branches on chest', 
+    'Intricate Tiger Lily with a single honeybee on one petal across calf', 
+    'Band of flames writhing around upper arm'];
 
 function newTattoo() {
     var tattoo = Math.floor(Math.random() * tattoos.length);
     document.getElementById('tattooDisplay').innerHTML = tattoos[tattoo];
+}
+
+var character_flaws = ['Spitefulness', 'Pettiness', 'Cowardice', 'Dishonesty', 
+    'Cruelty', 'Self denial', 'Naivete', 'Gullibility', 'Messiness', 'Insincerity', 
+    'Arrogance', 'Vengefulness', 'Delusion', 'Rage', 'Self pity', 'Selfishness', 
+    'Hypocrisy', 'Laziness', 'Entitlement', 'Prejudice', 'Defensiveness', 'Prudishness', 
+    'Unfairness', 'Tactlessness', 'Paranoia', 'Gruff', 'Bad habit', 'Hedonistic', 'Humorless', 
+    'Idealist', 'Impatient', 'Illiterate', 'Avoidant', 'Careless', 'Chatter box', 'Competitive', 
+    'Cold', 'Cynical', 'Deceptive', 'Defiant', 'Distracted easily', 'Forgetful', 'Greedy', 
+    'Impressionable', 'Impulsive', 'Indulgent', 'Kleptomaniac', 'Messy', 'Mischievious', 
+    'Nosy', 'Pyromaniac', 'Quick tempered', 'Reckless', 'Rebellious', 'Sarcastic', 'Sneaky', 
+    'Spoiled', 'Superstitious', 'Temperamental', 'Vain'];
+
+function newCharacterFlaw(){
+    var character_flaw = Math.floor(Math.random() * character_flaws.length);
+    document.getElementById('characterFlawDisplay').innerHTML = character_flaws[character_flaw];
+}
+
+var phobias = ['Darkness', 'Heights', 'Vomiting secondary to airsickness', 'Cats', 'Chickens', 
+    'Garlic', 'Amnesia secondary to Concussion', 'Choking', 'Needles', 'Pickpockets', 'Thunder', 
+    'Lightning strike', 'Zombies', 'Ghosts', 'Drow', 'The Underdark', 'Spiders', 'Floods', 
+    'Venomous snakes', 'Scent of decomposition', 'Toads', 'Slime', 'Mirrors', 'Bats', 
+    'Enclosed spaces', 'Wasps', 'Freezing to death', 'Demons', 'Plague', 'Ents', 'Crossroads curses', 
+    'Being kicked by a mule', 'Choking on a fish bone', 'Leprosy', 'Rodents', 'Ravens', 
+    'Death portents', 'Curses', 'Tunnels', 'Goblins', 'Sea travel'];
+
+function newPhobia(){
+    var phobia = Math.floor(Math.random() * phobia.length);
+    document.getElementById('phobiaDisplay').innerHTML = phobias[phobia];
 }
 
 
