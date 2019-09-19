@@ -96,9 +96,9 @@ function newHairColor(){
 }
 
 var places_of_birth = ['Floating Shanty Town', 'Haunted Forest', 'Pirate Infested Islands', 'Slums Of Port City', 
-    'Mage Academy Of Cloud Spires', 'Fortress deep under the mountaIns', 'Cursed Palace or Fallen KIngdom', 
-    'City Of Ten Thousand Flags', 'Conquered city In the shifting sands', 'Forgotten Elven Monastery', 
-    'Remote Keep In Northern Icelands', 'Silk and spices trade galley', 'Fishing village', 'Fey Wilds', 
+    'Mage Academy Of Cloud Spires', 'Fortress deep under the mountaIns', 'Cursed Palace or Fallen Kingdom', 
+    'City of Ten Thousand Flags', 'Conquered city in the shifting sands', 'Forgotten Elven Monastery', 
+    'Remote Keep in Northern Icelands', 'Silk and spices trade galley', 'Fishing village', 'Fey Wilds', 
     'Moving island', 'Plague ridden city', 'High Class brothel', 'Thriving Seaport Town', 
     'Cliffside Village Of Griffon Riders', 'Doomed Dwarven Fortress']
 

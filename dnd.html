@@ -12,16 +12,23 @@
 
         <div class='header'>
             <h1>D&D Character Generator</h1>
-
+        </div>
+        <div>
             <button class='btn-clear' value='CLEAR' onClick='window.location.reload();'>CLEAR</button>
         </div>
 
         <div>
-            <button onclick='newFullCharacter()'>New Character</button>
+            <button class='btn-full-character' onclick='newFullCharacter()'>New Character</button>
         </div>
 
+
+
+
+
+        <div class='all-features-div'>
+
         <div class='category'> 
-            <button onclick='newRace()'>Race</button>
+            <button class='btn-feature' onclick='newRace()'>Race</button>
                     
             <div id='raceDisplay'>
                 <!-- Race will display here -->
@@ -29,7 +36,7 @@
         </div>
 
         <div class='category'> 
-            <button onclick='newSkinColor()'>Skin Color</button>
+            <button class='btn-feature' onclick='newSkinColor()'>Skin Color</button>
                 
             <div id='skinColorDisplay'>
                 <!-- Skin Color will display here -->
@@ -37,7 +44,7 @@
         </div>
 
         <div class='category'> 
-            <button onclick='newEyeColor()'>Eye Color</button>
+            <button class='btn-feature' onclick='newEyeColor()'>Eye Color</button>
             
             <div id='eyeColorDisplay'>
                 <!-- Eye Color will display here -->
@@ -45,7 +52,7 @@
         </div>
         
         <div class='category'>         
-            <button onclick='newHairColor()'>Hair Color</button>
+            <button class='btn-feature' onclick='newHairColor()'>Hair Color</button>
             
             <div id='hairColorDisplay'>
                 <!-- Hair Color will display here -->                
@@ -53,7 +60,7 @@
         </div>
             
         <div class='category'>         
-            <button onclick='newHairStyle()'>Hair Style</button>
+            <button class='btn-feature' onclick='newHairStyle()'>Hair Style</button>
             
             <div id='hairStyleDisplay'>
                 <!-- Hair Style will display here -->
@@ -62,7 +69,7 @@
 
 
         <div class='category'> 
-            <button onclick='newPlaceOfBirth()'>Place of Birth</button>
+            <button class='btn-feature' onclick='newPlaceOfBirth()'>Place of Birth</button>
         
             <div id='placeOfBirthDisplay'>
                 <!-- Place of Birth will display here -->
@@ -70,7 +77,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newCaretaker()'>Caretaker</button>
+            <button class='btn-feature' onclick='newCaretaker()'>Caretaker</button>
         
             <div id='caretakerDisplay'>
                 <!-- Caretaker will display here -->
@@ -78,7 +85,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newChildhood()'>Childhood</button>
+            <button class='btn-feature' onclick='newChildhood()'>Childhood</button>
         
             <div id='childhoodDisplay'>
                 <!-- Childhood will display here -->
@@ -86,7 +93,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newTattoo()'>Tattoo</button>
+            <button class='btn-feature' onclick='newTattoo()'>Tattoo</button>
             
             <div id='tattooDisplay'>
                 <!-- Tattoo will display here -->
@@ -94,7 +101,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newCharacterFlaw()'>Character Flaw</button>
+            <button class='btn-feature' onclick='newCharacterFlaw()'>Character Flaw</button>
                 
             <div id='characterFlawDisplay'>
                 <!-- Character Flaw will display here -->
@@ -102,7 +109,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newPhobia()'>Phobia</button>
+            <button class='btn-feature' onclick='newPhobia()'>Phobia</button>
                     
             <div id='phobiaDisplay'>
                 <!-- Phobia will display here -->
@@ -110,7 +117,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newAppearanceTrait()'>Appearance Trait</button>
+            <button class='btn-feature' onclick='newAppearanceTrait()'>Appearance Trait</button>
                         
             <div id='appearanceTraitDisplay'>
                 <!-- Appearance Traits will display here -->
@@ -118,7 +125,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newOccupation()'>Occupation</button>
+            <button class='btn-feature' onclick='newOccupation()'>Occupation</button>
                             
             <div id='occupationDisplay'>
                 <!-- Occupation will display here -->
@@ -126,7 +133,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newGoalDesireSecret()'>Goal/Desire/Secret</button>
+            <button class='btn-feature' onclick='newGoalDesireSecret()'>Goal/Desire/Secret</button>
                                 
             <div id='goalDesireSecretDisplay'>
                 <!-- Goal/Desire/Secret will display here -->
@@ -134,7 +141,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newRandomEncounter()'>Random Encounter</button>
+            <button class='btn-feature' onclick='newRandomEncounter()'>Random Encounter</button>
                                     
             <div id='randomEncounterDisplay'>
                 <!-- Random Encounter will display here -->
@@ -142,7 +149,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newWineLiquor()'>Wine/Liquor</button>
+            <button class='btn-feature' onclick='newWineLiquor()'>Wine/Liquor</button>
                                         
             <div id='wineLiquorDisplay'>
                 <!-- Wine/Liquor will display here -->
@@ -150,7 +157,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newTavernInnFood()'>Tavern/Inn Food</button>
+            <button class='btn-feature' onclick='newTavernInnFood()'>Tavern/Inn Food</button>
                                             
             <div id='tavernInnFoodDisplay'>
                 <!-- Tavern/Inn Food will display here -->
@@ -158,7 +165,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newMiscTreasureItem()'>Misc Treasure Item</button>
+            <button class='btn-feature' onclick='newMiscTreasureItem()'>Misc Treasure Item</button>
                                                 
             <div id='miscTreasureItemDisplay'>
                 <!--  Misc Treasure Item will display here -->
@@ -166,7 +173,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newWound()'>Wound</button>
+            <button class='btn-feature' onclick='newWound()'>Wound</button>
                                                     
             <div id='woundDisplay'>
                 <!--  Wound will display here -->
@@ -174,7 +181,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newMisfortune()'>Misfortune</button>
+            <button class='btn-feature' onclick='newMisfortune()'>Misfortune</button>
                                                         
             <div id='misfortuneDisplay'>                    
                 <!--  Misfortune will display here -->
@@ -182,7 +189,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newDeath()'>Death</button>
+            <button class='btn-feature' onclick='newDeath()'>Death</button>
                                                             
             <div id='deathDisplay'>
                 <!--  Death will display here -->                    
@@ -190,7 +197,7 @@
         </div>
 
         <div class='category'>
-            <button onclick='newSocialStatus()'>Social Status</button>
+            <button class='btn-feature' onclick='newSocialStatus()'>Social Status</button>
                                                                 
             <div id='socialStatusDisplay'>
                 <!--  Social Status will display here -->
@@ -199,7 +206,7 @@
 
     
         <div class='category'>
-            <button onclick='newHobby()'>Hobby</button>
+            <button class='btn-feature' onclick='newHobby()'>Hobby</button>
                                                                     
             <div id='hobbyDisplay'>
                 <!--  Hobby will display here -->
@@ -207,12 +214,17 @@
         </div>
 
         <div class='category'>
-            <button onclick='newScent()'>Scent</button>
+            <button class='btn-feature' onclick='newScent()'>Scent</button>
                                                                         
             <div id='scentDisplay'>
                 <!--  Scent will display here -->
             </div>
         </div>
+
+
+
+        </div>
+
 
     <script src='scripts.js'></script>
 

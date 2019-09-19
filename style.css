@@ -10,10 +10,31 @@ body {
 
 .btn-clear {
     width: 90px;
-    height: 50px;
+    height: 20px;
     background-color: #FFCF54;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
+
+.btn-full-character {
+    width: 120px;
+    height: 50px;
+    background-color: #D48AFF;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-feature {
+    width: 130px;
+    height: 30px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.all-features-div {
+    column-count: 3;
+}
+
 
 .category {
     margin-bottom: 20px;
