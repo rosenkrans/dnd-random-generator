@@ -45,9 +45,9 @@ body {
 .feature-display {
     font-weight: bold;
     text-align: center;
-    width: 300px;
+    /* width: 300px; */
     /* background-image: url(images/grid4.jpg); */
-    background-color: #FFFAD1
+    /* background-color: #FFFAD1 */
 }
 
 .category {
