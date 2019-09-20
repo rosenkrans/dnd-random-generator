@@ -224,7 +224,7 @@ function newOccupation(){
 
 var goal_desire_secrets = ['Missing relative', 'Unrequited romance', 'Missing lover', 
     'Secret shapeshifter', 'Trying to find lost heirloom', 'Escaping an enemy', 
-    'Running from the law', 'Recovering form illness', 'Wants to be famous', 
+    'Running from the law', 'Recovering from illness', 'Wants to be famous', 
     'Needs help with monster', 'Completely drunk', 'Selling something', 
     'Love potion targeted on PC', 'Carries a cryptic treasure map they won in a tavern bet', 
     'Who is a recovering gambling addiction and lost minor appendages to it', 
