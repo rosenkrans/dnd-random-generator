@@ -492,6 +492,18 @@ function newHobby(){
     document.getElementById('hobbyDisplay').innerHTML = hobbies[hobby];
 }
 
+
+var number_of_romances = ['0', '1', '2', '3', '4'];
+
+function newNumberOfRomance(){
+    var number_of_romance = Math.floor(Math.random() * number_of_romances.length);
+    document.getElementById('numberOfRomancesDisplay').innerHTML = number_of_romances[number_of_romance];
+}
+
+
+
+
+
 var scents = ['Absinthe, Allspice', 'Amber', 'Ambergris', 'Apple', 'Apricot', 'Ashes', 
     'Autumn leaves', 'Autumn spices', 'Baby Powder', 'Baking cookies', 'Balsam Wood', 
     'Bamboo', 'Basil', 'Bay Leaf', 'Bay Rum', 'Berries', 'Blackberry', 'Black Currant', 
@@ -525,3 +537,11 @@ function newScent(){
     var scent = Math.floor(Math.random() * scents.length);
     document.getElementById('scentDisplay').innerHTML = scents[scent];
 }
+
+
+
+
+
+
+
+
