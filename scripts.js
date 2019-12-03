@@ -1,17 +1,35 @@
 function newFullCharacter(){
     newRace();
+    newHairColor();
+    newTattoo();
+    newArchetype();
+    newFavoriteFood();
+    newRandomEncounter();
+    newPlaceOfBirth();
+    newCaretakerOneRace()
+    newCaretakerOneArchetypeOne();
+    newCaretakerTwoRace();
+    newCaretakerTwoArchetypeTwo();
+    newNumberOfSiblings();
+    newSiblingOne();
+    newSiblingOneRoleInSociety();
+    newSiblingTwo();
+    newSiblingTwoRoleInSociety();
+    newSiblingThree();
+    newSiblingThreeRoleInSociety()
+    newSiblingFour();
+    newSiblingFourRoleInSociety();
+
+
+
     newSkinColor();
     newEyeColor();
-    newHairColor();
     newHairStyle();
-    newPlaceOfBirth();
     newCaretaker();
     newChildhood();
-    newTattoo();
     newCharacterFlaw();
     newPhobia();
     newAppearanceTrait();
-    newOccupation();
     newGoalDesireSecret();
     newRandomEncounter();
     newWineLiquor();
@@ -36,6 +54,253 @@ function newRace(){
     var race = Math.floor(Math.random() * races.length);
     document.getElementById('raceDisplay').innerHTML = races[race];
 }
+
+var hair_colors = ['White', 'Gray', 'Silver', 'Platinum', 'Sandy blonde', 'Sandy brown', 'Caramel brown',
+    'Coffee brown', 'Auburn', 'Chestnut', 'Mahogany', 'Sable', 'Blue black', 'Coppery', 'Bright red', 
+    'Flame red', 'Deep copper', 'Turquoise', 'Midnight blue', 'Spring green', 'Forest green', 'Rose pink', 
+    'Lavender', 'Aqua']
+
+function newHairColor(){ 
+    var hair_color = Math.floor(Math.random() * hair_colors.length);
+    document.getElementById('hairColorDisplay').innerHTML = hair_colors[hair_color];
+}
+
+var tattoos = ['Fading snake around arm', 
+    'Colorful serpent around leg', 
+    'Delicate serpent around wrist', 
+    'Coiled serpent biting its own tail on chest', 
+    'Pair of twining serpents across back', 
+    'Fiery serpent along forearm', 
+    'Rampant lion across left side of chest', 
+    'Rampant gryphon across back', 
+    'Sly dragon coiled around shoulder and upper arm', 
+    'Bright smiling sun on shoulder', 
+    'Fierce falcon on calf', 
+    'Mischievous squirrel on calf', 
+    'Shrouded figure with a scythe on shoulderblade', 
+    'Rusted hourglass on ankle', 
+    'Grinning skull resting on ruby roses across right side of chest', 
+    'Sorrowful fox beneath a golden harvest moon', 
+    'Brightly colored lizard scampering up shoulder', 
+    'Holly bough with bright red berries on wrist', 
+    'Eagle clutching three arrows on one shoulderblade', 
+    'Raven with outstretched wings across back', 
+    'Fierce-eyed falcon with outstretched wings across chest', 
+    'Sultry mermaid amidst a school of dolphins across thigh', 
+    'Red-furred fox grinning slyly on shoulder', 
+    'Elegant sunflower twined with an emerald ribbon across shoulderblade', 
+    'Golden-eyed owl gazing solemnly from shoulder', 
+    'Proud stag with antlers stretched across both shoulders and back', 
+    'Delicate strand of ivory and blossoms around wrist', 
+    'Sinuous strand of thorned branches around upper arm', 
+    'Tawny furred lioness reclining across shoulderblade', 
+    'Ship with tattered black sails on calf', 
+    'Ornate Oak tree with stylized branches on chest', 
+    'Intricate Tiger Lily with a single honeybee on one petal across calf', 
+    'Band of flames writhing around upper arm'];
+
+function newTattoo() {
+    var tattoo = Math.floor(Math.random() * tattoos.length);
+    document.getElementById('tattooDisplay').innerHTML = tattoos[tattoo];
+}
+
+var archetypes = ['Architect', 'Autocrat', 'Autist', 'Bon Vivant', 'Bravo', 'Caregiver', 'Cavalier', 
+    'Child', 'Competitor', 'Confidant', 'Conformist', 'Conniver', 'Critic', 'Curmudgeon', 
+    'Director', 'Deviant', 'Fanatic', 'Gallant', 'Honest-Abe', 'Jester', 'Jobsworth', 'Judge', 'Loner', 
+    'Manipulator', 'Martyr', 'Masochist', 'Mediator', 'Optimist', 'Pedagogue', 'Penitent', 
+    'Perfectionist', 'Plotter', 'Poltroon', 'Praise-seeker', 'Rebel', 'Survivor', 'Sycophant', 
+    'Thrill-seeker', 'Traditionalist', 'Visionary', 'Major Arcana: The Fool', 'Major Arcana: The Magician', 
+    'Major Arcana: The High Priestess', 'Major Arcana: The Emperor', 'Major Arcana: The Empress', 
+    'Major Arcana: The Hieroophant', 'Major Arcana: The Lovers', 'Major Arcana: The Chariot', 
+    'Major Arcana: Strength', 'Major Arcana: The Hermit', 'Major Arcana: The Wheel', 'Major Arcana: Justice', 
+    'Major Arcana: The Hanged Man', 'Major Arcana: Death', 'Major Arcana: Temperence', 'Major Arcana: The Devil', 
+    'Major Arcana: The Tower', 'Major Arcana: The Star', 'Major Arcana: The Moon', 'Major Arcana: The Sun', 
+    'Major Arcana: Judgment', 'Major Arcana: The World'];
+
+function newArchetype(){
+    var archetype = Math.floor(Math.random() * archetypes.length);
+    document.getElementById('archetypeDisplay').innerHTML = archetypes[archetype];
+}
+
+var favorite_foods = ['Slop', 'Sausages', 'Goat Leg', 'Green Eggs and Ham'];
+
+function newFavoriteFood(){
+    var favorite_food = Math.floor(Math.random() * favorite_foods.length);
+    document.getElementById('newFavoriteFood').innerHTML = favorite_foods[favorite_food];
+}
+
+var random_encounters = ['Seasonal festival', 'Funeral', 'Evil creatures breeding', 
+    'Traveling minstrels', 'Traveling tinkers', 'Escaped criminal', 'Wizard spell gone awry', 
+    'Find an egg from a dragon', 'Find an egg from a gryphon', 'Earthquake', 'Severe winter storm', 
+    'Severe thunderstorm', 'Lame horse', 'Forest fire', 'Bandits', 'Black eyed children', 
+    'Lost child', 'Cult ambush', 'Plague stricken farm', 'Plague stricken village', 'Cursed item', 
+    'Vengeful ex lover', 'Lost hatchling', 'Strayed monster youngling', 'Swarms of vermin', 
+    'Farmhouse on fire', 'Waystation on fire', 'Orc raid on farm', 'Tornado', 'Enormous sinkhole', 
+    'Chasm with broken bridge'];
+
+function newRandomEncounter(){
+    var random_encounter = Math.floor(Math.random() * random_encounters.length);
+    document.getElementById('randomEncounterDisplay').innerHTML = random_encounters[random_encounter];
+}
+
+var places_of_birth = ['Floating Shanty Town', 'Haunted Forest', 'Pirate Infested Islands', 'Slums Of Port City', 
+    'Mage Academy Of Cloud Spires', 'Fortress deep under the mountaIns', 'Cursed Palace or Fallen Kingdom', 
+    'City of Ten Thousand Flags', 'Conquered city in the shifting sands', 'Forgotten Elven Monastery', 
+    'Remote Keep in Northern Icelands', 'Silk and spices trade galley', 'Fishing village', 'Fey Wilds', 
+    'Moving island', 'Plague ridden city', 'High Class brothel', 'Thriving Seaport Town', 
+    'Cliffside Village Of Griffon Riders', 'Doomed Dwarven Fortress']
+
+function newPlaceOfBirth(){ 
+    var place_of_birth = Math.floor(Math.random() * places_of_birth.length);
+    document.getElementById('placeOfBirthDisplay').innerHTML = places_of_birth[place_of_birth];
+}
+
+var caretaker_one_races = ['Human', 'Dwarf', 'High Elf', 'Wood Elf', 'Half Elf', 'Drow', 'Halfling', 'Gnome', 'Dragonkin', 
+    'Half-orc', 'Genasi', 'Tiefling'];
+
+function newCaretakerOneRace(){
+    var caretaker_one_race = Math.floor(Math.random() * caretaker_one_races.length);
+    document.getElementById('caretakerOneRaceDisplay').innerHTML = caretaker_one_races[caretaker_one_race];
+}
+
+var caretaker_one_archetypes_one = ['Architect', 'Autocrat', 'Autist', 'Bon Vivant', 'Bravo', 'Caregiver', 'Cavalier', 
+    'Child', 'Competitor', 'Confidant', 'Conformist', 'Conniver', 'Critic', 'Curmudgeon', 
+    'Director', 'Deviant', 'Fanatic', 'Gallant', 'Honest-Abe', 'Jester', 'Jobsworth', 'Judge', 'Loner', 
+    'Manipulator', 'Martyr', 'Masochist', 'Mediator', 'Optimist', 'Pedagogue', 'Penitent', 
+    'Perfectionist', 'Plotter', 'Poltroon', 'Praise-seeker', 'Rebel', 'Survivor', 'Sycophant', 
+    'Thrill-seeker', 'Traditionalist', 'Visionary', 'Major Arcana: The Fool', 'Major Arcana: The Magician', 
+    'Major Arcana: The High Priestess', 'Major Arcana: The Emperor', 'Major Arcana: The Empress', 
+    'Major Arcana: The Hieroophant', 'Major Arcana: The Lovers', 'Major Arcana: The Chariot', 
+    'Major Arcana: Strength', 'Major Arcana: The Hermit', 'Major Arcana: The Wheel', 'Major Arcana: Justice', 
+    'Major Arcana: The Hanged Man', 'Major Arcana: Death', 'Major Arcana: Temperence', 'Major Arcana: The Devil', 
+    'Major Arcana: The Tower', 'Major Arcana: The Star', 'Major Arcana: The Moon', 'Major Arcana: The Sun', 
+    'Major Arcana: Judgment', 'Major Arcana: The World'];
+
+function newCaretakerOneArchetypeOne(){
+    var caretaker_one_archetype_one = Math.floor(Math.random() * caretaker_one_archetypes_one.length);
+    document.getElementById('caretakerOneArchetypeOneDisplay').innerHTML = caretaker_one_archetypes_one[caretaker_one_archetype_one];
+}
+
+var caretaker_two_races = ['Human', 'Dwarf', 'High Elf', 'Wood Elf', 'Half Elf', 'Drow', 'Halfling', 'Gnome', 'Dragonkin', 
+    'Half-orc', 'Genasi', 'Tiefling'];
+
+function newCaretakerTwoRace(){
+    var caretaker_two_race = Math.floor(Math.random() * caretaker_two_races.length);
+    document.getElementById('caretakerTwoRaceDisplay').innerHTML = caretaker_two_races[caretaker_two_race];
+}
+
+var caretaker_two_archetypes_two = ['Architect', 'Autocrat', 'Autist', 'Bon Vivant', 'Bravo', 'Caregiver', 'Cavalier', 
+    'Child', 'Competitor', 'Confidant', 'Conformist', 'Conniver', 'Critic', 'Curmudgeon', 
+    'Director', 'Deviant', 'Fanatic', 'Gallant', 'Honest-Abe', 'Jester', 'Jobsworth', 'Judge', 'Loner', 
+    'Manipulator', 'Martyr', 'Masochist', 'Mediator', 'Optimist', 'Pedagogue', 'Penitent', 
+    'Perfectionist', 'Plotter', 'Poltroon', 'Praise-seeker', 'Rebel', 'Survivor', 'Sycophant', 
+    'Thrill-seeker', 'Traditionalist', 'Visionary', 'Major Arcana: The Fool', 'Major Arcana: The Magician', 
+    'Major Arcana: The High Priestess', 'Major Arcana: The Emperor', 'Major Arcana: The Empress', 
+    'Major Arcana: The Hieroophant', 'Major Arcana: The Lovers', 'Major Arcana: The Chariot', 
+    'Major Arcana: Strength', 'Major Arcana: The Hermit', 'Major Arcana: The Wheel', 'Major Arcana: Justice', 
+    'Major Arcana: The Hanged Man', 'Major Arcana: Death', 'Major Arcana: Temperence', 'Major Arcana: The Devil', 
+    'Major Arcana: The Tower', 'Major Arcana: The Star', 'Major Arcana: The Moon', 'Major Arcana: The Sun', 
+    'Major Arcana: Judgment', 'Major Arcana: The World'];
+
+function newCaretakerTwoArchetypeTwo(){
+    var caretaker_two_archetype_two = Math.floor(Math.random() * caretaker_two_archetypes_two.length);
+    document.getElementById('caretakerTwoArchetypeTwoDisplay').innerHTML = caretaker_two_archetypes_two[caretaker_two_archetype_two];
+}
+
+var numbers_of_siblings = ['0', '1', '2', '3', '4']	
+
+function newNumberOfSiblings(){
+    var number_of_siblings = Math.floor(Math.random() * numbers_of_siblings.length);
+    document.getElementById('numberOfSiblingsDisplay').innerHTML = numbers_of_siblings[number_of_siblings];
+}
+
+var sibling_ones = ["Older sister of same parents", "Twin sister of same parents", 
+    "Younger sister of same parents", "Older brother of same parents", "Twin brother of same parents", 
+    "Younger brother of same parents", "Adopted older sister", "Adopted younger sister", 
+    "Adopted older brother", "Adopted younger brother", "Older sister from Mother's previous marriage", 
+    "Older brother from Mother's previous marriage", "Older sister from Father's previous marriage", 
+    "Older brother from Father's previous marriage"];
+
+function newSiblingOne(){
+    var sibling_one = Math.floor(Math.random() * sibling_ones.length);
+    document.getElementById('siblingOneDisplay').innerHTML = sibling_ones[sibling_one];
+}
+
+var sibling_one_roles_in_society = ['role1', 'role2', 'role3', 'role4', 'role5'];
+
+function newSiblingOneRoleInSociety(){
+    var sibling_one_role_in_society = Math.floor(Math.random() * sibling_one_roles_in_society.length);
+    document.getElementById('siblingOneRoleInSocietyDisplay').innerHTML = sibling_one_roles_in_society[sibling_one_role_in_society];
+}
+
+var sibling_twos = ["Older sister of same parents", "Twin sister of same parents", 
+    "Younger sister of same parents", "Older brother of same parents", "Twin brother of same parents", 
+    "Younger brother of same parents", "Adopted older sister", "Adopted younger sister", 
+    "Adopted older brother", "Adopted younger brother", "Older sister from Mother's previous marriage", 
+    "Older brother from Mother's previous marriage", "Older sister from Father's previous marriage", 
+    "Older brother from Father's previous marriage"];
+
+function newSiblingTwo(){
+    var sibling_two = Math.floor(Math.random() * sibling_twos.length);
+    document.getElementById('siblingTwoDisplay').innerHTML = sibling_twos[sibling_two];
+}
+
+var sibling_two_roles_in_society = ['role1', 'role2', 'role3', 'role4', 'role5'];
+
+function newSiblingTwoRoleInSociety(){
+    var sibling_two_role_in_society = Math.floor(Math.random() * sibling_two_roles_in_society.length);
+    document.getElementById('siblingTwoRoleInSocietyDisplay').innerHTML = sibling_two_roles_in_society[sibling_two_role_in_society];
+}
+
+var sibling_threes = ["Older sister of same parents", "Twin sister of same parents", 
+    "Younger sister of same parents", "Older brother of same parents", "Twin brother of same parents", 
+    "Younger brother of same parents", "Adopted older sister", "Adopted younger sister", 
+    "Adopted older brother", "Adopted younger brother", "Older sister from Mother's previous marriage", 
+    "Older brother from Mother's previous marriage", "Older sister from Father's previous marriage", 
+    "Older brother from Father's previous marriage"];
+
+function newSiblingThree(){
+    var sibling_three = Math.floor(Math.random() * sibling_threes.length);
+    document.getElementById('siblingThreeDisplay').innerHTML = sibling_threes[sibling_three];
+}
+
+var sibling_three_roles_in_society = ['role1', 'role2', 'role3', 'role4', 'role5'];
+
+function newSiblingThreeRoleInSociety(){
+    var sibling_three_role_in_society = Math.floor(Math.random() * sibling_three_roles_in_society.length);
+    document.getElementById('siblingThreeRoleInSocietyDisplay').innerHTML = sibling_three_roles_in_society[sibling_three_role_in_society];
+}
+
+var sibling_fours = ["Older sister of same parents", "Twin sister of same parents", 
+    "Younger sister of same parents", "Older brother of same parents", "Twin brother of same parents", 
+    "Younger brother of same parents", "Adopted older sister", "Adopted younger sister", 
+    "Adopted older brother", "Adopted younger brother", "Older sister from Mother's previous marriage", 
+    "Older brother from Mother's previous marriage", "Older sister from Father's previous marriage", 
+    "Older brother from Father's previous marriage"];
+
+function newSiblingFour(){
+    var sibling_four = Math.floor(Math.random() * sibling_fours.length);
+    document.getElementById('siblingFourDisplay').innerHTML = sibling_fours[sibling_four];
+}
+
+var sibling_four_roles_in_society = ['role1', 'role2', 'role3', 'role4', 'role5'];
+
+function newSiblingFourRoleInSociety(){
+    var sibling_four_role_in_society = Math.floor(Math.random() * sibling_four_roles_in_society.length);
+    document.getElementById('siblingFourRoleInSocietyDisplay').innerHTML = sibling_four_roles_in_society[sibling_four_role_in_society];
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 var skin_colors = ['Ivory', 'Pale', 'Bone white', 'Weathered', 'Tanned', 'Rosy', 'Olive', 
     'Caramel', 'Deep brown', 'Gray', 'Silvery', 'Sunwarmed copper', 'Mahogany', 'Porcelain', 'Espresso', 
@@ -89,26 +354,29 @@ function newHairStyle(){
     document.getElementById('hairStyleDisplay').innerHTML = hair_styles[hair_style];
 }
 
-var hair_colors = ['White', 'Gray', 'Silver', 'Platinum', 'Sandy blonde', 'Sandy brown', 'Caramel brown',
-    'Coffee brown', 'Auburn', 'Chestnut', 'Mahogany', 'Sable', 'Blue black', 'Coppery', 'Bright red', 
-    'Flame red', 'Deep copper', 'Turquoise', 'Midnight blue', 'Spring green', 'Forest green', 'Rose pink', 
-    'Lavender', 'Aqua']
+var archetypes_one = ['Architect', 'Autocrat', 'Autist', 'Bon Vivant', 'Bravo', 'Caregiver', 'Cavalier', 
+    'Child', 'Competitor', 'Confidant', 'Conformist', 'Conniver', 'Critic', 'Curmudgeon', 
+    'Director', 'Deviant', 'Fanatic', 'Gallant', 'Honest-Abe', 'Jester', 'Jobsworth', 'Judge', 'Loner', 
+    'Manipulator', 'Martyr', 'Masochist', 'Mediator', 'Optimist', 'Pedagogue', 'Penitent', 
+    'Perfectionist', 'Plotter', 'Poltroon', 'Praise-seeker', 'Rebel', 'Survivor', 'Sycophant', 
+    'Thrill-seeker', 'Traditionalist', 'Visionary', 'Major Arcana: The Fool', 'Major Arcana: The Magician', 
+    'Major Arcana: The High Priestess', 'Major Arcana: The Emperor', 'Major Arcana: The Empress', 
+    'Major Arcana: The Hieroophant', 'Major Arcana: The Lovers', 'Major Arcana: The Chariot', 
+    'Major Arcana: Strength', 'Major Arcana: The Hermit', 'Major Arcana: The Wheel', 'Major Arcana: Justice', 
+    'Major Arcana: The Hanged Man', 'Major Arcana: Death', 'Major Arcana: Temperence', 'Major Arcana: The Devil', 
+    'Major Arcana: The Tower', 'Major Arcana: The Star', 'Major Arcana: The Moon', 'Major Arcana: The Sun', 
+    'Major Arcana: Judgment', 'Major Arcana: The World'];
 
-function newHairColor(){ 
-    var hair_color = Math.floor(Math.random() * hair_colors.length);
-    document.getElementById('hairColorDisplay').innerHTML = hair_colors[hair_color];
+function newRelationshipArchetypeOne (){
+    var archetype_one = Math.floor(Math.random() * archetypes_one.length);
+    document.getElementById('relationshipArchetypeOneDisplay').innerHTML = archetypes_one[archetype_one];
 }
 
-var places_of_birth = ['Floating Shanty Town', 'Haunted Forest', 'Pirate Infested Islands', 'Slums Of Port City', 
-    'Mage Academy Of Cloud Spires', 'Fortress deep under the mountaIns', 'Cursed Palace or Fallen Kingdom', 
-    'City of Ten Thousand Flags', 'Conquered city in the shifting sands', 'Forgotten Elven Monastery', 
-    'Remote Keep in Northern Icelands', 'Silk and spices trade galley', 'Fishing village', 'Fey Wilds', 
-    'Moving island', 'Plague ridden city', 'High Class brothel', 'Thriving Seaport Town', 
-    'Cliffside Village Of Griffon Riders', 'Doomed Dwarven Fortress']
+var numbers_of_siblings = ['0', '1', '2', '3', '4']	
 
-function newPlaceOfBirth(){ 
-    var place_of_birth = Math.floor(Math.random() * places_of_birth.length);
-    document.getElementById('placeOfBirthDisplay').innerHTML = places_of_birth[place_of_birth];
+function newNumberOfSiblings(){
+    var number_of_siblings = Math.floor(Math.random() * numbers_of_siblings.length);
+    document.getElementById('numberOfSiblingsDisplay').innerHTML = numbers_of_siblings[number_of_siblings];
 }
 
 var caretakers = ['Original parents', 'Aunt', 'Uncle', 'Distant relative from far off land', 
@@ -132,45 +400,6 @@ var childhoods = ['Caretaker in prison', 'Caretaker a street rat', 'Caretaker a 
 function newChildhood() {
     var childhood = Math.floor(Math.random() * childhoods.length);
     document.getElementById('childhoodDisplay').innerHTML = childhoods[childhood];
-}
-
-var tattoos = ['Fading snake around arm', 
-    'Colorful serpent around leg', 
-    'Delicate serpent around wrist', 
-    'Coiled serpent biting its own tail on chest', 
-    'Pair of twining serpents across back', 
-    'Fiery serpent along forearm', 
-    'Rampant lion across left side of chest', 
-    'Rampant gryphon across back', 
-    'Sly dragon coiled around shoulder and upper arm', 
-    'Bright smiling sun on shoulder', 
-    'Fierce falcon on calf', 
-    'Mischievous squirrel on calf', 
-    'Shrouded figure with a scythe on shoulderblade', 
-    'Rusted hourglass on ankle', 
-    'Grinning skull resting on ruby roses across right side of chest', 
-    'Sorrowful fox beneath a golden harvest moon', 
-    'Brightly colored lizard scampering up shoulder', 
-    'Holly bough with bright red berries on wrist', 
-    'Eagle clutching three arrows on one shoulderblade', 
-    'Raven with outstretched wings across back', 
-    'Fierce-eyed falcon with outstretched wings across chest', 
-    'Sultry mermaid amidst a school of dolphins across thigh', 
-    'Red-furred fox grinning slyly on shoulder', 
-    'Elegant sunflower twined with an emerald ribbon across shoulderblade', 
-    'Golden-eyed owl gazing solemnly from shoulder', 
-    'Proud stag with antlers stretched across both shoulders and back', 
-    'Delicate strand of ivory and blossoms around wrist', 
-    'Sinuous strand of thorned branches around upper arm', 
-    'Tawny furred lioness reclining across shoulderblade', 
-    'Ship with tattered black sails on calf', 
-    'Ornate Oak tree with stylized branches on chest', 
-    'Intricate Tiger Lily with a single honeybee on one petal across calf', 
-    'Band of flames writhing around upper arm'];
-
-function newTattoo() {
-    var tattoo = Math.floor(Math.random() * tattoos.length);
-    document.getElementById('tattooDisplay').innerHTML = tattoos[tattoo];
 }
 
 var character_flaws = ['Spitefulness', 'Pettiness', 'Cowardice', 'Dishonesty', 
@@ -226,12 +455,6 @@ function newOccupation(){
     document.getElementById('occupationDisplay').innerHTML = occupations[occupation];
 }
 
-
-
-
-
-
-
 var goal_desire_secrets = ['Missing relative', 'Unrequited romance', 'Missing lover', 
     'Secret shapeshifter', 'Trying to find lost heirloom', 'Escaping an enemy', 
     'Running from the law', 'Recovering from illness', 'Wants to be famous', 
@@ -254,19 +477,7 @@ function newGoalDesireSecret(){
     document.getElementById('goalDesireSecretDisplay').innerHTML = goal_desire_secrets[goal_desire_secret];
 }
 
-var random_encounters = ['Seasonal festival', 'Funeral', 'Evil creatures breeding', 
-    'Traveling minstrels', 'Traveling tinkers', 'Escaped criminal', 'Wizard spell gone awry', 
-    'Find an egg from a dragon', 'Find an egg from a gryphon', 'Earthquake', 'Severe winter storm', 
-    'Severe thunderstorm', 'Lame horse', 'Forest fire', 'Bandits', 'Black eyed children', 
-    'Lost child', 'Cult ambush', 'Plague stricken farm', 'Plague stricken village', 'Cursed item', 
-    'Vengeful ex lover', 'Lost hatchling', 'Strayed monster youngling', 'Swarms of vermin', 
-    'Farmhouse on fire', 'Waystation on fire', 'Orc raid on farm', 'Tornado', 'Enormous sinkhole', 
-    'Chasm with broken bridge'];
 
-function newRandomEncounter(){
-    var random_encounter = Math.floor(Math.random() * random_encounters.length);
-    document.getElementById('randomEncounterDisplay').innerHTML = random_encounters[random_encounter];
-}
 
 var wine_liquors = ['Grog', 'Goblin spit ale', 'Orc Kragg', 'Turnip wine', 'Miller\'s moonshine', 
     'Dwarven ale', 'Moon Mountain ale', 'Lotus leaf wine', 'Dragonhead stout', 'Elven Mead', 'Berry brandy',
@@ -360,17 +571,12 @@ function newHobby(){
     document.getElementById('hobbyDisplay').innerHTML = hobbies[hobby];
 }
 
-
 var number_of_romances = ['0', '1', '2', '3', '4'];
 
 function newNumberOfRomance(){
     var number_of_romance = Math.floor(Math.random() * number_of_romances.length);
     document.getElementById('numberOfRomancesDisplay').innerHTML = number_of_romances[number_of_romance];
 }
-
-
-
-
 
 var scents = ['Absinthe, Allspice', 'Amber', 'Ambergris', 'Apple', 'Apricot', 'Ashes', 
     'Autumn leaves', 'Autumn spices', 'Baby Powder', 'Baking cookies', 'Balsam Wood', 
@@ -405,9 +611,6 @@ function newScent(){
     var scent = Math.floor(Math.random() * scents.length);
     document.getElementById('scentDisplay').innerHTML = scents[scent];
 }
-
-
-
 
 var sibling_one_professions = ["Priest or Priestess of Auril", "goddess of winter", "Priest or Priestess of Azuth", 
     "god of wizards", "Priest or Priestess of Bane", "god of tyranny", "Priest or Priestess of Beshaba", 
@@ -961,7 +1164,7 @@ function newSiblingFourProfession(){
     document.getElementById("siblingFourProfessionDisplay").innerHTML = sibling_four_professions[sibling_four_profession];
 }
 
-
+ 
 
 
 
