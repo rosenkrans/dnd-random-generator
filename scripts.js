@@ -126,10 +126,7 @@ function newFullCharacter(){
 
 // var attributeDiv = document.getElementsByClassName('feature-display')
 
-// function newRace(){
-//     var race = Math.floor(Math.random() * races.length);
-//     document.getElementById('raceDisplay').innerHTML = races[race];
-// }
+
 
 
 // *********CONSOLIDATING TO LESS FUNCTIONS *******
@@ -140,10 +137,11 @@ function newAttribute(elementId, attributeArray){
     // console.log(attributeArray.length)
     let randomAttribute = Math.floor(Math.random() * attributeArray.length);
     document.getElementById(elementId).innerHTML = attributeArray[randomAttribute];
+    document.getElementById(elementId).style.backgroundColor = '#FFE891';
 }
 
 
-var allButtons = document.querySelectorAll(".btn-feature");
+// var allButtons = document.querySelectorAll(".btn-feature");
 // console.log(allButtons);
 
 // for(let i=0; i<allButtons.length; i++) {
@@ -668,5 +666,8 @@ var numbers_of_children = ['0', '1', '2']
 
 
 
-
+// function newRace(){
+//     var race = Math.floor(Math.random() * races.length);
+//     document.getElementById('raceDisplay').innerHTML = races[race];
+// }
 
