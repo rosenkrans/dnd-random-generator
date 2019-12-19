@@ -124,7 +124,7 @@ function newFullCharacter(){
 }
 
 
-
+// var attributeDiv = document.getElementsByClassName('feature-display')
 
 // function newRace(){
 //     var race = Math.floor(Math.random() * races.length);
