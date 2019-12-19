@@ -24,20 +24,17 @@
 
 
 
-
-
         <div class='all-features-div'>
 
-        <div class='category'> 
-            <button class='btn-feature' onclick='newRace()'>Race</button>
-                    
-            <div class='feature-display' id='raceDisplay'>
-                <!-- Race will display here -->
-            </div>    
-        </div>
+            <div class='category'> 
+                <button class='btn-feature' onclick="newAttribute('raceDisplay', races)">Race</button>
+                <div class='feature-display' id='raceDisplay'>
+                    <!-- Race will display here -->
+                </div>    
+            </div>
 
         <div class='category'>         
-            <button class='btn-feature' onclick='newHairColor()'>Hair Color</button>
+            <button class='btn-feature' onclick="newAttribute('hairColorDisplay', hair_colors)">Hair Color</button>
             
             <div class='feature-display' id='hairColorDisplay'>
                 <!-- Hair Color will display here -->                
@@ -45,7 +42,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newTattoo()'>Tattoo</button>
+            <button class='btn-feature' onclick="newAttribute('tattooDisplay', tattoos)">Tattoo</button>
             
             <div class='feature-display' id='tattooDisplay'>
                 <!-- Tattoo will display here -->
@@ -53,7 +50,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newArchetype()'>Archetype</button>
+            <button class='btn-feature' onclick="newAttribute('archetypeDisplay', archetypes)">Archetype</button>
             
             <div class='feature-display' id='archetypeDisplay'>
                 <!-- Archetype will display here -->
@@ -61,7 +58,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFavoriteFood()'>Favorite Food</button>
+            <button class='btn-feature' onclick="newAttribute('newFavoriteFood', foods)">Favorite Food</button>
             
             <div class='feature-display' id='newFavoriteFood'>
                 <!-- Favorite food will display here -->
@@ -69,7 +66,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRandomEncounter()'>Random Encounter</button>
+            <button class='btn-feature' onclick="newAttribute('randomEncounterDisplay', random_encounters)">Random Encounter</button>
                                     
             <div class='feature-display' id='randomEncounterDisplay'>
                 <!-- Random Encounter will display here -->
@@ -77,7 +74,7 @@
         </div>
 
         <div class='category'> 
-            <button class='btn-feature' onclick='newPlaceOfBirth()'>Place of Birth</button>
+            <button class='btn-feature' onclick="newAttribute('placeOfBirthDisplay', places_of_birth)">Place of Birth</button>
         
             <div class='feature-display' id='placeOfBirthDisplay'>
                 <!-- Place of Birth will display here -->
@@ -85,7 +82,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretakerOneRace()'>Caretaker 1 Race</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerOneRaceDisplay', races)">Caretaker 1 Race</button>
         
             <div class='feature-display' id='caretakerOneRaceDisplay'>
                 <!-- Caretaker 1 race will display here -->
@@ -93,7 +90,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretakerOneArchetypeOne()'>Caretaker 1 Archetype</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerOneArchetypeOneDisplay', archetypes)">Caretaker 1 Archetype</button>
             
             <div class='feature-display' id='caretakerOneArchetypeOneDisplay'>
                 <!-- Archetype 1 will display here -->
@@ -101,7 +98,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretakerTwoRace()'>Caretaker 2 Race</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerTwoRaceDisplay', races)">Caretaker 2 Race</button>
         
             <div class='feature-display' id='caretakerTwoRaceDisplay'>
                 <!-- Caretaker 2 race will display here -->
@@ -109,7 +106,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretakerTwoArchetypeTwo()'>Caretaker 2 Archetype</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerTwoArchetypeTwoDisplay', archetypes)">Caretaker 2 Archetype</button>
             
             <div class='feature-display' id='caretakerTwoArchetypeTwoDisplay'>
                 <!-- Archetype 2 will display here -->
@@ -117,7 +114,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newNumberOfSiblings()'># of Siblings</button>
+            <button class='btn-feature' onclick="newAttribute('numberOfSiblingsDisplay', numbers_of_siblings)"># of Siblings</button>
             
             <div class='feature-display' id='numberOfSiblingsDisplay'>
                 <!-- Number of siblings will display here -->
@@ -125,7 +122,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingOne()'>Sibling 1</button>
+            <button class='btn-feature' onclick="newAttribute('siblingOneDisplay', siblings)">Sibling 1</button>
             
             <div class='feature-display' id='siblingOneDisplay'>
                 <!-- data will display here -->
@@ -133,7 +130,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingOneRoleInSociety()'>Sibling 1 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('siblingOneRoleInSocietyDisplay', sibling_roles_in_society)">Sibling 1 Role in Society</button>
             
             <div class='feature-display' id='siblingOneRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -141,7 +138,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingTwo()'>Sibling 2</button>
+            <button class='btn-feature' onclick="newAttribute('siblingTwoDisplay', siblings)">Sibling 2</button>
             
             <div class='feature-display' id='siblingTwoDisplay'>
                 <!-- data will display here -->
@@ -149,7 +146,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingTwoRoleInSociety()'>Sibling 2 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('siblingTwoRoleInSocietyDisplay', sibling_roles_in_society)">Sibling 2 Role in Society</button>
             
             <div class='feature-display' id='siblingTwoRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -157,7 +154,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingThree()'>Sibling 3</button>
+            <button class='btn-feature' onclick="newAttribute('siblingThreeDisplay', siblings)">Sibling 3</button>
             
             <div class='feature-display' id='siblingThreeDisplay'>
                 <!-- data will display here -->
@@ -165,7 +162,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingThreeRoleInSociety()'>Sibling 3 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('siblingThreeRoleInSocietyDisplay', sibling_roles_in_society)">Sibling 3 Role in Society</button>
             
             <div class='feature-display' id='siblingThreeRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -173,7 +170,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingFour()'>Sibling 4</button>
+            <button class='btn-feature' onclick="newAttribute('siblingFourDisplay', siblings)">Sibling 4</button>
             
             <div class='feature-display' id='siblingFourDisplay'>
                 <!-- data will display here -->
@@ -181,15 +178,8 @@
         </div>
 
 
-<!-- ---------------------------------- -->
-
-
-
-
-
-
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingFourRoleInSociety()'>Sibling 4 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('siblingFourRoleInSocietyDisplay', sibling_roles_in_society)">Sibling 4 Role in Society</button>
             
             <div class='feature-display' id='siblingFourRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -197,7 +187,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipOne()'>Relationship 1</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipOneDisplay', relationships)">Relationship 1</button>
             
             <div class='feature-display' id='relationshipOneDisplay'>
                 <!-- data will display here -->
@@ -205,7 +195,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipArchetypeOne()'>Archetype 1</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipArchetypeOneDisplay', archetypes)">Archetype 1</button>
             
             <div class='feature-display' id='relationshipArchetypeOneDisplay'>
                 <!-- data will display here -->
@@ -213,7 +203,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newAppearanceTraitOne()'>Appearance Trait 1</button>
+            <button class='btn-feature' onclick="newAttribute('appearanceTraitOneDisplay', appearance_traits)">Appearance Trait 1</button>
             
             <div class='feature-display' id='appearanceTraitOneDisplay'>
                 <!-- data will display here -->
@@ -221,7 +211,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipTwo()'>Relationship 2</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipTwoDisplay', relationships)">Relationship 2</button>
             
             <div class='feature-display' id='relationshipTwoDisplay'>
                 <!-- data will display here -->
@@ -229,7 +219,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipArchetypeTwo()'>Archetype 2</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipArchetypeTwoDisplay', archetypes)">Archetype 2</button>
             
             <div class='feature-display' id='relationshipArchetypeTwoDisplay'>
                 <!-- data will display here -->
@@ -237,7 +227,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newAppearanceTraitTwo()'>Appearance Trait 2</button>
+            <button class='btn-feature' onclick="newAttribute('appearanceTraitTwoDisplay', appearance_traits)">Appearance Trait 2</button>
             
             <div class='feature-display' id='appearanceTraitTwoDisplay'>
                 <!-- data will display here -->
@@ -245,7 +235,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipThree()'>Relationship 3</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipThreeDisplay', relationships)">Relationship 3</button>
             
             <div class='feature-display' id='relationshipThreeDisplay'>
                 <!-- data will display here -->
@@ -253,7 +243,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipArchetypeThree()'>Archetype 3</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipArchetypeThreeDisplay', archetypes)">Archetype 3</button>
             
             <div class='feature-display' id='relationshipArchetypeThreeDisplay'>
                 <!-- data will display here -->
@@ -261,7 +251,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newAppearanceTraitThree()'>Appearance Trait 3</button>
+            <button class='btn-feature' onclick="newAttribute('appearanceTraitThreeDisplay', appearance_traits)">Appearance Trait 3</button>
             
             <div class='feature-display' id='appearanceTraitThreeDisplay'>
                 <!-- data will display here -->
@@ -269,7 +259,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newMadeAnEnemyOne()'>Made an Enemy 1</button>
+            <button class='btn-feature' onclick="newAttribute('madeAnEnemyOneDisplay', enemies)">Made an Enemy 1</button>
             
             <div class='feature-display' id='madeAnEnemyOneDisplay'>
                 <!-- data will display here -->
@@ -277,7 +267,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyArchetypeOne()'>Enemy Archetype 1</button>
+            <button class='btn-feature' onclick="newAttribute('enemyArchetypeOneDisplay', archetypes)">Enemy Archetype 1</button>
             
             <div class='feature-display' id='enemyArchetypeOneDisplay'>
                 <!-- data will display here -->
@@ -285,7 +275,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newMadeAnEnemyTwo()'>Made an Enemy 2</button>
+            <button class='btn-feature' onclick="newAttribute('madeAnEnemyTwoDisplay', enemies)">Made an Enemy 2</button>
             
             <div class='feature-display' id='madeAnEnemyTwoDisplay'>
                 <!-- data will display here -->
@@ -293,7 +283,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyArchetypeTwo()'>Enemy Archetype 2</button>
+            <button class='btn-feature' onclick="newAttribute('enemyArchetypeTwoDisplay', archetypes)">Enemy Archetype 2</button>
             
             <div class='feature-display' id='enemyArchetypeTwoDisplay'>
                 <!-- data will display here -->
@@ -301,7 +291,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newMadeAnEnemyThree()'>Made an Enemy 3</button>
+            <button class='btn-feature' onclick="newAttribute('madeAnEnemyThreeDisplay', enemies)">Made an Enemy 3</button>
             
             <div class='feature-display' id='madeAnEnemyThreeDisplay'>
                 <!-- data will display here -->
@@ -309,7 +299,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyArchetypeThree()'>Enemy Archetype 3</button>
+            <button class='btn-feature' onclick="newAttribute('enemyArchetypeThreeDisplay', archetypes)">Enemy Archetype 3</button>
             
             <div class='feature-display' id='enemyArchetypeThreeDisplay'>
                 <!-- data will display here -->
@@ -317,7 +307,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newMadeAFriendOne()'>Made a Friend 1</button>
+            <button class='btn-feature' onclick="newAttribute('madeAFriendOneDisplay', friends)">Made a Friend 1</button>
             
             <div class='feature-display' id='madeAFriendOneDisplay'>
                 <!-- data will display here -->
@@ -325,7 +315,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendArchetypeOne()'>Friend Archetype 1</button>
+            <button class='btn-feature' onclick="newAttribute('friendArchetypeOneDisplay', archetypes)">Friend Archetype 1</button>
             
             <div class='feature-display' id='friendArchetypeOneDisplay'>
                 <!-- data will display here -->
@@ -333,7 +323,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newMadeAFriendTwo()'>Made a Friend 2</button>
+            <button class='btn-feature' onclick="newAttribute('madeAFriendTwoDisplay', friends)">Made a Friend 2</button>
             
             <div class='feature-display' id='madeAFriendTwoDisplay'>
                 <!-- data will display here -->
@@ -341,7 +331,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendArchetypeTwo()'>Friend Archetype 2</button>
+            <button class='btn-feature' onclick="newAttribute('friendArchetypeTwoDisplay', archetypes)">Friend Archetype 2</button>
             
             <div class='feature-display' id='friendArchetypeTwoDisplay'>
                 <!-- data will display here -->
@@ -349,7 +339,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newMadeAFriendThree()'>Made a Friend 3</button>
+            <button class='btn-feature' onclick="newAttribute('madeAFriendThreeDisplay', friends)">Made a Friend 3</button>
             
             <div class='feature-display' id='madeAFriendThreeDisplay'>
                 <!-- data will display here -->
@@ -357,18 +347,15 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendArchetypeThree()'>Friend Archetype 3</button>
+            <button class='btn-feature' onclick="newAttribute('friendArchetypeThreeDisplay', archetypes)">Friend Archetype 3</button>
             
             <div class='feature-display' id='friendArchetypeThreeDisplay'>
                 <!-- data will display here -->
             </div>
         </div>
 
-
-
-
         <div class='category'> 
-            <button class='btn-feature' onclick='newSkinColor()'>Skin Color</button>
+            <button class='btn-feature' onclick="newAttribute('skinColorDisplay', skin_colors)">Skin Color</button>
                 
             <div class='feature-display' id='skinColorDisplay'>
                 <!-- Skin Color will display here -->
@@ -376,7 +363,7 @@
         </div>
 
         <div class='category'>         
-            <button class='btn-feature' onclick='newHairStyle()'>Hair Style</button>
+            <button class='btn-feature' onclick="newAttribute('hairStyleDisplay', hair_styles)">Hair Style</button>
             
             <div class='feature-display' id='hairStyleDisplay'>
                 <!-- Hair Style will display here -->
@@ -384,7 +371,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newScent()'>Scent</button>
+            <button class='btn-feature' onclick="newAttribute('scentDisplay', scents)">Scent</button>
                                                                         
             <div class='feature-display' id='scentDisplay'>
                 <!--  Scent will display here -->
@@ -392,7 +379,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCharacterFlaw()'>Character Flaw</button>
+            <button class='btn-feature' onclick="newAttribute('characterFlawDisplay', character_flaws)">Character Flaw</button>
                 
             <div class='feature-display' id='characterFlawDisplay'>
                 <!-- Character Flaw will display here -->
@@ -400,7 +387,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFavoriteWine()'>Favorite Wine</button>
+            <button class='btn-feature' onclick="newAttribute('favoriteWineDisplay', wine_liquors)">Favorite Wine</button>
                                                     
             <div class='feature-display' id='favoriteWineDisplay'>
                 <!--  data will display here -->
@@ -408,7 +395,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newWound()'>Wound</button>
+            <button class='btn-feature' onclick="newAttribute('woundDisplay', wounds)">Wound</button>
                                                     
             <div class='feature-display' id='woundDisplay'>
                 <!--  Wound will display here -->
@@ -416,7 +403,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretaker()'>Caretaker</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerDisplay', caretakers)">Caretaker</button>
         
             <div class='feature-display' id='caretakerDisplay'>
                 <!-- Caretaker will display here -->
@@ -424,7 +411,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newProfession()'>Caretaker 1 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerOneProfessionDisplay', professions)">Caretaker 1 Profession</button>
         
             <div class='feature-display' id='caretakerOneProfessionDisplay'>
                 <!-- data will display here -->
@@ -432,7 +419,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretakerOneRelationship()'>Caretaker 1 Relationship</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerOneRelationshipDisplay', relationships)">Caretaker 1 Relationship</button>
         
             <div class='feature-display' id='caretakerOneRelationshipDisplay'>
                 <!-- data will display here -->
@@ -440,7 +427,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newProfession()'>Caretaker 2 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerTwoProfessionDisplay', professions)">Caretaker 2 Profession</button>
         
             <div class='feature-display' id='caretakerTwoProfessionDisplay'>
                 <!-- data will display here -->
@@ -448,7 +435,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretakerTwoRelationship()'>Caretaker 2 Relationship</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerTwoRelationshipDisplay', relationships)">Caretaker 2 Relationship</button>
         
             <div class='feature-display' id='caretakerTwoRelationshipDisplay'>
                 <!-- data will display here -->
@@ -456,7 +443,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newNumberOfRomance()'># of Romances</button>
+            <button class='btn-feature' onclick="newAttribute('numberOfRomancesDisplay', number_of_romances)"># of Romances</button>
         
             <div class='feature-display' id='numberOfRomancesDisplay'>
                 <!-- data will display here -->
@@ -464,7 +451,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingOneProfession()'>Sibling 1 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('siblingOneProfessionDisplay', professions)">Sibling 1 Profession</button>
         
             <div class='feature-display' id='siblingOneProfessionDisplay'>
                 <!-- data will display here -->
@@ -472,7 +459,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingOneRelationship()'>Sibling 1 Relationship</button>
+            <button class='btn-feature' onclick="newAttribute('siblingOneRelationshipDisplay', relationships)">Sibling 1 Relationship</button>
         
             <div class='feature-display' id='siblingOneRelationshipDisplay'>
                 <!-- data will display here -->
@@ -480,7 +467,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingTwoProfession()'>Sibling 2 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('siblingTwoProfessionDisplay', professions)">Sibling 2 Profession</button>
         
             <div class='feature-display' id='siblingTwoProfessionDisplay'>
                 <!-- data will display here -->
@@ -488,7 +475,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingTwoRelationship()'>Sibling 2 Relationship</button>
+            <button class='btn-feature' onclick="newAttribute('siblingTwoRelationshipDisplay', relationships)">Sibling 2 Relationship</button>
         
             <div class='feature-display' id='siblingTwoRelationshipDisplay'>
                 <!-- data will display here -->
@@ -496,7 +483,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingThreeProfession()'>Sibling 3 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('siblingThreeProfessionDisplay', professions)">Sibling 3 Profession</button>
         
             <div class='feature-display' id='siblingThreeProfessionDisplay'>
                 <!-- data will display here -->
@@ -504,7 +491,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingThreeRelationship()'>Sibling 3 Relationship</button>
+            <button class='btn-feature' onclick="newAttribute('siblingThreeRelationshipDisplay', relationships)">Sibling 3 Relationship</button>
         
             <div class='feature-display' id='siblingThreeRelationshipDisplay'>
                 <!-- data will display here -->
@@ -512,7 +499,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingFourProfession()'>Sibling 4 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('siblingFourProfessionDisplay', professions)">Sibling 4 Profession</button>
         
             <div class='feature-display' id='siblingFourProfessionDisplay'>
                 <!-- data will display here -->
@@ -520,7 +507,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingFourRelationship()'>Sibling 4 Relationship</button>
+            <button class='btn-feature' onclick="newAttribute('siblingFourRelationshipDisplay', relationships)">Sibling 4 Relationship</button>
         
             <div class='feature-display' id='siblingFourRelationshipDisplay'>
                 <!-- data will display here -->
@@ -528,7 +515,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipOneProfession()'>Relationship 1 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipOneProfessionDisplay', professions)">Relationship 1 Profession</button>
         
             <div class='feature-display' id='relationshipOneProfessionDisplay'>
                 <!-- data will display here -->
@@ -536,7 +523,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipOneRace()'>Relationship 1 Race</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipOneRaceDisplay', races)">Relationship 1 Race</button>
         
             <div class='feature-display' id='relationshipOneRaceDisplay'>
                 <!-- data will display here -->
@@ -544,7 +531,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipOneGender()'>Relationship 1 Gender</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipOneGenderDisplay', genders)">Relationship 1 Gender</button>
         
             <div class='feature-display' id='relationshipOneGenderDisplay'>
                 <!-- data will display here -->
@@ -552,7 +539,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipTwoProfession()'>Relationship 2 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipTwoProfessionDisplay', professions)">Relationship 2 Profession</button>
         
             <div class='feature-display' id='relationshipTwoProfessionDisplay'>
                 <!-- data will display here -->
@@ -560,7 +547,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipTwoRace()'>Relationship 2 Race</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipTwoRaceDisplay', races)">Relationship 2 Race</button>
         
             <div class='feature-display' id='relationshipTwoRaceDisplay'>
                 <!-- data will display here -->
@@ -568,7 +555,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipTwoGender()'>Relationship 2 Gender</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipTwoGenderDisplay', genders)">Relationship 2 Gender</button>
         
             <div class='feature-display' id='relationshipTwoGenderDisplay'>
                 <!-- data will display here -->
@@ -576,7 +563,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipThreeProfession()'>Relationship 3 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipThreeProfessionDisplay', professions)">Relationship 3 Profession</button>
         
             <div class='feature-display' id='relationshipThreeProfessionDisplay'>
                 <!-- data will display here -->
@@ -584,7 +571,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipThreeRace()'>Relationship 3 Race</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipThreeRaceDisplay', races)">Relationship 3 Race</button>
         
             <div class='feature-display' id='relationshipThreeRaceDisplay'>
                 <!-- data will display here -->
@@ -592,7 +579,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipThreeGender()'>Relationship 3 Gender</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipThreeGenderDisplay', genders)">Relationship 3 Gender</button>
         
             <div class='feature-display' id='relationshipThreeGenderDisplay'>
                 <!-- data will display here -->
@@ -600,7 +587,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyOneBecause()'>Enemy 1 Because</button>
+            <button class='btn-feature' onclick="newAttribute('enemyOneBecauseDisplay', enemy_becauses)">Enemy 1 Because</button>
             
             <div class='feature-display' id='enemyOneBecauseDisplay'>
                 <!-- data will display here -->
@@ -608,7 +595,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyOneProfession()'>Enemy 1 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('enemyOneProfessionDisplay', professions)">Enemy 1 Profession</button>
             
             <div class='feature-display' id='enemyOneProfessionDisplay'>
                 <!-- data will display here -->
@@ -616,7 +603,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyTwoBecause()'>Enemy 2 Because</button>
+            <button class='btn-feature' onclick="newAttribute('enemyTwoBecauseDisplay', enemy_becauses)">Enemy 2 Because</button>
             
             <div class='feature-display' id='enemyTwoBecauseDisplay'>
                 <!-- data will display here -->
@@ -624,7 +611,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyTwoProfession()'>Enemy 2 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('enemyTwoProfessionDisplay', professions)">Enemy 2 Profession</button>
             
             <div class='feature-display' id='enemyTwoProfessionDisplay'>
                 <!-- data will display here -->
@@ -632,7 +619,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyThreeBecause()'>Enemy 3 Because</button>
+            <button class='btn-feature' onclick="newAttribute('enemyThreeBecauseDisplay', enemy_becauses)">Enemy 3 Because</button>
             
             <div class='feature-display' id='enemyThreeBecauseDisplay'>
                 <!-- data will display here -->
@@ -640,7 +627,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyThreeProfession()'>Enemy 3 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('enemyThreeProfessionDisplay', professions)">Enemy 3 Profession</button>
             
             <div class='feature-display' id='enemyThreeProfessionDisplay'>
                 <!-- data will display here -->
@@ -648,7 +635,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendOneBecause()'>Friend 1 Because</button>
+            <button class='btn-feature' onclick="newAttribute('friendOneBecauseDisplay', friend_becauses)">Friend 1 Because</button>
             
             <div class='feature-display' id='friendOneBecauseDisplay'>
                 <!-- data will display here -->
@@ -656,7 +643,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendOneProfession()'>Friend 1 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('friendOneProfessionDisplay', professions)">Friend 1 Profession</button>
             
             <div class='feature-display' id='friendOneProfessionDisplay'>
                 <!-- data will display here -->
@@ -664,7 +651,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendTwoBecause()'>Friend 2 Because</button>
+            <button class='btn-feature' onclick="newAttribute('friendTwoBecauseDisplay', friend_becauses)">Friend 2 Because</button>
             
             <div class='feature-display' id='friendTwoBecauseDisplay'>
                 <!-- data will display here -->
@@ -672,7 +659,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendTwoProfession()'>Friend 2 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('friendTwoProfessionDisplay', professions)">Friend 2 Profession</button>
             
             <div class='feature-display' id='friendTwoProfessionDisplay'>
                 <!-- data will display here -->
@@ -680,7 +667,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendThreeBecause()'>Friend 3 Because</button>
+            <button class='btn-feature' onclick="newAttribute('friendThreeBecauseDisplay', friend_becauses)">Friend 3 Because</button>
             
             <div class='feature-display' id='friendThreeBecauseDisplay'>
                 <!-- data will display here -->
@@ -688,27 +675,15 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendThreeProfession()'>Friend 3 Profession</button>
+            <button class='btn-feature' onclick="newAttribute('friendThreeProfessionDisplay', professions)">Friend 3 Profession</button>
             
             <div class='feature-display' id='friendThreeProfessionDisplay'>
                 <!-- data will display here -->
             </div>
         </div>
 
-
-
-
-        
-        <div class='category'> 
-            <button class='btn-feature' onclick='newEyeColor()'>Eye Color</button>
-            
-            <div class='feature-display' id='eyeColorDisplay'>
-                <!-- Eye Color will display here -->
-            </div>    
-        </div>
-
         <div class='category'>
-            <button class='btn-feature' onclick='newAppearanceTrait()'>Appearance Trait</button>
+            <button class='btn-feature' onclick="newAttribute('appearanceTraitDisplay', appearance_traits)">Appearance Trait</button>
                         
             <div class='feature-display' id='appearanceTraitDisplay'>
                 <!-- Appearance Traits will display here -->
@@ -716,7 +691,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newMiscTreasureItem()'>Misc Treasure Item</button>
+            <button class='btn-feature' onclick="newAttribute('miscTreasureItemDisplay', treasures)">Misc Treasure Item</button>
                                                 
             <div class='feature-display' id='miscTreasureItemDisplay'>
                 <!--  Misc Treasure Item will display here -->
@@ -724,7 +699,7 @@
         </div>
         
         <div class='category'>
-            <button class='btn-feature' onclick='newPhobia()'>Phobia</button>
+            <button class='btn-feature' onclick="newAttribute('phobiaDisplay', phobias)">Phobia</button>
                     
             <div class='feature-display' id='phobiaDisplay'>
                 <!-- Phobia will display here -->
@@ -732,23 +707,23 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRoleInSociety()'>Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('roleInSocietyDisplay', roles_in_society)">Role in Society</button>
                                                         
             <div class='feature-display' id='roleInSocietyDisplay'>                    
-                <!--  Misfortune will display here -->
+                <!--  data will display here -->
             </div>
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newMisfortune()'>Misfortune</button>
+            <button class='btn-feature' onclick="newAttribute('fateDisplay', fates)">Fate</button>
                                                         
-            <div class='feature-display' id='misfortuneDisplay'>                    
-                <!--  Misfortune will display here -->
+            <div class='feature-display' id='fateDisplay'>                    
+                <!--  data will display here -->
             </div>
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newChildhood()'>Childhood</button>
+            <button class='btn-feature' onclick="newAttribute('childhoodDisplay', childhoods)">Childhood</button>
         
             <div class='feature-display' id='childhoodDisplay'>
                 <!-- Childhood will display here -->
@@ -756,7 +731,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretakerOneRoleInSociety()'>Caretaker 1 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerOneRoleInSocietyDisplay', roles_in_society)">Caretaker 1 Role in Society</button>
         
             <div class='feature-display' id='caretakerOneRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -764,7 +739,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretakerOneFate()'>Caretaker 1 Fate</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerOneFateDisplay', fates)">Caretaker 1 Fate</button>
         
             <div class='feature-display' id='caretakerOneFateDisplay'>
                 <!-- data will display here -->
@@ -772,7 +747,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretakerTwoRoleInSociety()'>Caretaker 2 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerTwoRoleInSocietyDisplay', roles_in_society)">Caretaker 2 Role in Society</button>
         
             <div class='feature-display' id='caretakerTwoRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -780,7 +755,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newCaretakerTwoFate()'>Caretaker 2 Fate</button>
+            <button class='btn-feature' onclick="newAttribute('caretakerTwoFateDisplay', fates)">Caretaker 2 Fate</button>
         
             <div class='feature-display' id='caretakerTwoFateDisplay'>
                 <!-- data will display here -->
@@ -788,7 +763,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newNumberOfChildren()'># of Children</button>
+            <button class='btn-feature' onclick="newAttribute('numberOfChildrensDisplay', numbers_of_children)"># of Children</button>
         
             <div class='feature-display' id='numberOfChildrensDisplay'>
                 <!-- data will display here -->
@@ -796,7 +771,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingOneArchetype()'>Sibling 1 Archetype</button>
+            <button class='btn-feature' onclick="newAttribute('siblingOneArchetypeDisplay', archetypes)">Sibling 1 Archetype</button>
         
             <div class='feature-display' id='siblingOneArchetypeDisplay'>
                 <!-- data will display here -->
@@ -804,7 +779,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingOneFate()'>Sibling 1 Fate</button>
+            <button class='btn-feature' onclick="newAttribute('siblingOneFateDisplay', fates)">Sibling 1 Fate</button>
         
             <div class='feature-display' id='siblingOneFateDisplay'>
                 <!-- data will display here -->
@@ -812,7 +787,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingTwoArchetype()'>Sibling 2 Archetype</button>
+            <button class='btn-feature' onclick="newAttribute('siblingTwoArchetypeDisplay', archetypes)">Sibling 2 Archetype</button>
         
             <div class='feature-display' id='siblingTwoArchetypeDisplay'>
                 <!-- data will display here -->
@@ -820,7 +795,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingTwoFate()'>Sibling 2 Fate</button>
+            <button class='btn-feature' onclick="newAttribute('siblingTwoFateDisplay', fates)">Sibling 2 Fate</button>
         
             <div class='feature-display' id='siblingTwoFateDisplay'>
                 <!-- data will display here -->
@@ -828,7 +803,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingThreeArchetype()'>Sibling 3 Archetype</button>
+            <button class='btn-feature' onclick="newAttribute('siblingThreeArchetypeDisplay', archetypes)">Sibling 3 Archetype</button>
         
             <div class='feature-display' id='siblingThreeArchetypeDisplay'>
                 <!-- data will display here -->
@@ -836,7 +811,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingThreeFate()'>Sibling 3 Fate</button>
+            <button class='btn-feature' onclick="newAttribute('siblingThreeFateDisplay', fates)">Sibling 3 Fate</button>
         
             <div class='feature-display' id='siblingThreeFateDisplay'>
                 <!-- data will display here -->
@@ -844,7 +819,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingFourArchetype()'>Sibling 4 Archetype</button>
+            <button class='btn-feature' onclick="newAttribute('siblingFourArchetypeDisplay', archetypes)">Sibling 4 Archetype</button>
         
             <div class='feature-display' id='siblingFourArchetypeDisplay'>
                 <!-- data will display here -->
@@ -852,7 +827,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newSiblingFourFate()'>Sibling 4 Fate</button>
+            <button class='btn-feature' onclick="newAttribute('siblingFourFateDisplay', fates)">Sibling 4 Fate</button>
         
             <div class='feature-display' id='siblingFourFateDisplay'>
                 <!-- data will display here -->
@@ -860,7 +835,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipOneRoleInSociety()'>Relationship 1 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipOneRoleInSocietyDisplay', roles_in_society)">Relationship 1 Role in Society</button>
         
             <div class='feature-display' id='relationshipOneRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -868,7 +843,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipOneGoalDesireSecret()'>Relationship 1 Goal/Desire/Secret</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipOneGoalDesireSecretDisplay', goals_desires_secrets)">Relationship 1 Goal/Desire/Secret</button>
         
             <div class='feature-display' id='relationshipOneGoalDesireSecretDisplay'>
                 <!-- data will display here -->
@@ -876,7 +851,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipOneScent()'>Relationship 1 Scent</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipOneScentDisplay', scents)">Relationship 1 Scent</button>
         
             <div class='feature-display' id='relationshipOneScentDisplay'>
                 <!-- data will display here -->
@@ -884,7 +859,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipTwoRoleInSociety()'>Relationship 2 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipTwoRoleInSocietyDisplay', roles_in_society)">Relationship 2 Role in Society</button>
         
             <div class='feature-display' id='relationshipTwoRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -892,7 +867,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipTwoGoalDesireSecret()'>Relationship 2 Goal/Desire/Secret</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipTwoGoalDesireSecretDisplay', goals_desires_secrets)">Relationship 2 Goal/Desire/Secret</button>
         
             <div class='feature-display' id='relationshipTwoGoalDesireSecretDisplay'>
                 <!-- data will display here -->
@@ -900,7 +875,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipTwoScent()'>Relationship 2 Scent</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipTwoScentDisplay', scents)">Relationship 2 Scent</button>
         
             <div class='feature-display' id='relationshipTwoScentDisplay'>
                 <!-- data will display here -->
@@ -908,7 +883,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipOneRoleInSociety()'>Relationship 3 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipOneRoleInSocietyDisplay', roles_in_society)">Relationship 3 Role in Society</button>
         
             <div class='feature-display' id='relationshipOneRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -916,7 +891,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipThreeGoalDesireSecret()'>Relationship 3 Goal/Desire/Secret</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipThreeGoalDesireSecretDisplay', goals_desires_secrets)">Relationship 3 Goal/Desire/Secret</button>
         
             <div class='feature-display' id='relationshipThreeGoalDesireSecretDisplay'>
                 <!-- data will display here -->
@@ -924,7 +899,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newRelationshipThreeScent()'>Relationship 3 Scent</button>
+            <button class='btn-feature' onclick="newAttribute('relationshipThreeScentDisplay', scents)">Relationship 3 Scent</button>
         
             <div class='feature-display' id='relationshipThreeScentDisplay'>
                 <!-- data will display here -->
@@ -932,7 +907,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyOneStrengthOfEnmity()'>Enemy 1 Strength of Enmity</button>
+            <button class='btn-feature' onclick="newAttribute('enemyOneStrengthOfEnmityDisplay', strengths_of_enmity)">Enemy 1 Strength of Enmity</button>
         
             <div class='feature-display' id='enemyOneStrengthOfEnmityDisplay'>
                 <!-- data will display here -->
@@ -940,7 +915,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyOneRoleInSociety()'>Enemy 1 Role In Society</button>
+            <button class='btn-feature' onclick="newAttribute('enemyOneRoleInSocietyDisplay', roles_in_society)">Enemy 1 Role In Society</button>
         
             <div class='feature-display' id='enemyOneRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -948,7 +923,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyTwoStrengthOfEnmity()'>Enemy 2 Strength of Enmity</button>
+            <button class='btn-feature' onclick="newAttribute('enemyTwoStrengthOfEnmityDisplay', strengths_of_enmity)">Enemy 2 Strength of Enmity</button>
         
             <div class='feature-display' id='enemyTwoStrengthOfEnmityDisplay'>
                 <!-- data will display here -->
@@ -956,7 +931,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyTwoRoleInSociety()'>Enemy 2 Role In Society</button>
+            <button class='btn-feature' onclick="newAttribute('enemyTwoRoleInSocietyDisplay', roles_in_society)">Enemy 2 Role In Society</button>
         
             <div class='feature-display' id='enemyTwoRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -964,7 +939,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyThreeStrengthOfEnmity()'>Enemy 3 Strength of Enmity</button>
+            <button class='btn-feature' onclick="newAttribute('enemyThreeStrengthOfEnmityDisplay', strengths_of_enmity)">Enemy 3 Strength of Enmity</button>
         
             <div class='feature-display' id='enemyThreeStrengthOfEnmityDisplay'>
                 <!-- data will display here -->
@@ -972,7 +947,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newEnemyThreeRoleInSociety()'>Enemy 3 Role In Society</button>
+            <button class='btn-feature' onclick="newAttribute('enemyThreeRoleInSocietyDisplay', roles_in_society)">Enemy 3 Role In Society</button>
         
             <div class='feature-display' id='enemyThreeRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -980,7 +955,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newStrengthOfFriendshipOne()'>Strength of Friendship 1</button>
+            <button class='btn-feature' onclick="newAttribute('strengthOfFriendshipOneDisplay', strengths_of_friendship)">Strength of Friendship 1</button>
         
             <div class='feature-display' id='strengthOfFriendshipOneDisplay'>
                 <!-- data will display here -->
@@ -988,7 +963,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendOneRoleInSociety()'>Friend 1 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('friendOneRoleInSocietyDisplay', roles_in_society)">Friend 1 Role in Society</button>
         
             <div class='feature-display' id='friendOneRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -996,7 +971,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newStrengthOfFriendshipTwo()'>Strength of Friendship 2</button>
+            <button class='btn-feature' onclick="newAttribute('strengthOfFriendshipTwoDisplay', strengths_of_friendship)">Strength of Friendship 2</button>
         
             <div class='feature-display' id='strengthOfFriendshipTwoDisplay'>
                 <!-- data will display here -->
@@ -1004,7 +979,7 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendTwoRoleInSociety()'>Friend 2 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('friendTwoRoleInSocietyDisplay', roles_in_society)">Friend 2 Role in Society</button>
         
             <div class='feature-display' id='friendTwoRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -1012,15 +987,16 @@
         </div>
 
         <div class='category'>
-            <button class='btn-feature' onclick='newStrengthOfFriendshipThree()'>Strength of Friendship 3</button>
+            <button class='btn-feature' onclick="newAttribute('strengthOfFriendshipThreeDisplay', strengths_of_friendship)">Strength of Friendship 3</button>
         
             <div class='feature-display' id='strengthOfFriendshipThreeDisplay'>
                 <!-- data will display here -->
             </div>    
         </div>
 
+
         <div class='category'>
-            <button class='btn-feature' onclick='newFriendThreeRoleInSociety()'>Friend 3 Role in Society</button>
+            <button class='btn-feature' onclick="newAttribute('friendThreeRoleInSocietyDisplay', roles_in_society)">Friend 3 Role in Society</button>
         
             <div class='feature-display' id='friendThreeRoleInSocietyDisplay'>
                 <!-- data will display here -->
@@ -1028,63 +1004,6 @@
         </div>
 
         
-
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-        
-
-        
-        
-        
-            
-        
-
-
-        
-
-        
-
-        
-
-        
-
-        
-
         
 
         <!-- <div class='category'>
