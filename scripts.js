@@ -136,15 +136,15 @@ function newFullCharacter(){
 
 function newAttribute(elementId, attributeArray){
     // console.log(elementId)
-    console.log('newAttribute called', attributeArray)
-    console.log(attributeArray.length)
+    // console.log('newAttribute called', attributeArray)
+    // console.log(attributeArray.length)
     let randomAttribute = Math.floor(Math.random() * attributeArray.length);
     document.getElementById(elementId).innerHTML = attributeArray[randomAttribute];
 }
 
 
 var allButtons = document.querySelectorAll(".btn-feature");
-console.log(allButtons);
+// console.log(allButtons);
 
 // for(let i=0; i<allButtons.length; i++) {
 //     allButtons[i].addEventListener('click', newAttribute);  
