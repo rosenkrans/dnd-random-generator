@@ -124,12 +124,6 @@ function newFullCharacter(){
 }
 
 
-// var attributeDiv = document.getElementsByClassName('feature-display')
-
-
-
-
-// *********CONSOLIDATING TO LESS FUNCTIONS *******
 
 function newAttribute(elementId, attributeArray){
     // console.log(elementId)
@@ -148,8 +142,6 @@ function newAttribute(elementId, attributeArray){
 //     allButtons[i].addEventListener('click', newAttribute);  
 // }
 
-
-// *************************************************
 
 
 // ******* BEGIN LISTING ARRAYS *****************************************
@@ -358,8 +350,6 @@ var friend_becauses = ['because you helped them', 'because they helped you',
     'because you follow the same god or goddess', 
     'because you found yourself in the same strange city or wilderness together',]
 
-
-// SIBLING INFORMATION ========================================================================
 var numbers_of_siblings = ['0', '1', '2', '3', '4']	
 
 var siblings = ["Older sister of same parents", "Twin sister of same parents", 
@@ -368,7 +358,6 @@ var siblings = ["Older sister of same parents", "Twin sister of same parents",
     "Adopted older brother", "Adopted younger brother", "Older sister from Mother's previous marriage", 
     "Older brother from Mother's previous marriage", "Older sister from Father's previous marriage", 
     "Older brother from Father's previous marriage"];
-
 
 var fates = ['Tormenting prophetic visions', 'Hunted by Reaper', 'Generational curse', 
 'Haunted by Ghost', 'Possessed by demon', 'Taken by slavers', 'Kidnapped by barbarians', 
@@ -386,10 +375,10 @@ var fates = ['Tormenting prophetic visions', 'Hunted by Reaper', 'Generational c
 'Murdered by jealous lover', 'Sacrificed by a cult', 'Kidnapped by a dragon', 
 'Enslaved to an Archmagus because of magical talent', 'Conscripted by pirates'];
 
-
-
-
-var roles_in_society = ['role1', 'role2', 'role3', 'role4', 'role5'];
+var roles_in_society = ['Slave',  'Petty criminal', 'Major criminal', 'Wealthy landowner', 'Craftsman', 
+    'Scholar', 'Soldier or Mercenary', 'Crime lord', 'Minor mage', 'Demon hunter', 'Minor noble', 'Major Noble', 
+    'Archmage', 'High Priest or Priestess', 'Acolyte or Monk', 'Connected to the Dark', 
+    'Connected to the Light', 'Royalty'];
 
 var caretakers = ['Original parents', 'Aunt', 'Uncle', 'Distant relative from far off land', 
     'One parent alive & other misfortune', 'One parent alive & other dead', 'Grandparent', 
